@@ -1,0 +1,57 @@
+quantity,value
+videos,100
+configurations,108
+fixed_config,yolo26m_r1280__botsort_h0.45
+videos_where_fixed_is_not_best,81
+gap_median,0.993158985115528
+videos_gap_above_5,5
+gap_max,20.714492711268946
+video_with_gap_max,MOT20/MOT20-05
+distinct_oracle_configs,27
+best_minus_second_median,0.4383258269323598
+videos_best_minus_second_within_0.5,53
+videos_within_1_point_of_oracle,50
+epsilon_below_which_fixed_is_strictly_most_adequate,7.482534981
+fixed_same_without_any_dataset_or_video,True
+single_factor_gains_sum,1.6072764855508261
+scene_relations,25
+scene_relations_significant_holm,9
+fixed_cost_mean_ms,48.10360881425484
+fixed_cost_sd_ms,15.202379089125005
+fixed_cost_min_ms,31.734554756983048
+fixed_cost_max_ms,105.50679287617865
+oracle_cost_mean_ms,52.19271349365526
+videos_with_cheaper_config_as_good,63
+videos_with_cheaper_config_as_good_at_least_10pct,40
+videos_with_cheaper_config_as_good_at_least_half,32
+saving_ms_median,22.7849930966146
+saving_pct_median,63.00765272715968
+saving_hota_gain_median,0.5396410169620438
+cheaper_config_without_botsort,35
+cheaper_config_lower_resolution,36
+cheaper_config_same_detector,55
+videos_4k,8
+configs_whose_worst_video_is_4k,96
+cheapest_botsort_worst_video_without_4k_ms,50.651318318909034
+worst video: botsort_feasible_from_ms,80.82056413610081
+worst video: fixed_uses_botsort_from_ms,95.746218321
+worst video: gap_when_fixed_switches_to_botsort,3.052220766020476
+worst video: gap_max,3.1192562137576068
+worst video: gap_max_at_ms,94.998900382
+worst video: lowest_cost_ms,18.328276518527286
+worst video: highest_cost_ms,180.93171948901772
+mean over videos: botsort_feasible_from_ms,37.49223402905778
+mean over videos: fixed_uses_botsort_from_ms,43.306927053
+mean over videos: gap_when_fixed_switches_to_botsort,2.827589368769838
+mean over videos: gap_max,3.046590434116021
+mean over videos: gap_max_at_ms,45.228279243
+mean over videos: lowest_cost_ms,10.663498140297042
+mean over videos: highest_cost_ms,95.69659277244574
+runs,3
+cost_per_cell,median per cell
+typical_cost_variation_across_runs,0.10890050735379322
+mean_detection_hours,12.154232962962963
+mean_tracking_hours,47.08106027777777
+videos_16_9,95
+frames,95859
+fps_min,14.0

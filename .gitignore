@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Virtual environments
+.venv/
+.venvs/
+venv/
+
+# Local paths (copy configs/paths.example.yaml)
+configs/paths.local.yaml
+
+# Datasets, weights and TrackEval (obtained separately, see README)
+datasets/
+TrackEval/
+*.pt
+*.pth
+*.onnx
+*.engine
+
+# Runs: detection caches, tracks and per-cell metrics are large; they are regenerated with the commands
+runs/
+results/
+
+# Tool caches
+.pytest_cache/
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini

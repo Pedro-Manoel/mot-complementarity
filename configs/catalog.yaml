@@ -1,0 +1,33 @@
+# 4 detectors x 3 resolutions x 3 tracker families x 3 high-threshold levels = 108 configurations.
+# Only parameters common to every detector, or to every tracker; the rest stays at the library default.
+schema_version: 1
+
+detection:
+  conf_floor: 0.01        # score floor of the detection cache; must stay below the lowest tracker threshold
+  max_det: 300            # boxes per image over all classes; must equal D-FINE's 300 queries
+  precision: fp32         # only fp32 is supported
+
+# Parameters common to the three trackers, translated for each family; a list declares levels applied to all of them.
+tracking:
+  lost_track_seconds: 1.0 # how long a lost track is kept
+  high_score_thresh: [0.3, 0.45, 0.6] # score to enter the first association and to start a new track
+  confirm_frames: 2       # frames with a detection before a track is output; must be 2 for ByteTrack and BoT-SORT
+
+detectors:
+  - name: yolo26n
+    backend: ultralytics
+    checkpoint: {file: yolo26n.pt}
+  - name: yolo26m
+    backend: ultralytics
+    checkpoint: {file: yolo26m.pt}
+  - name: dfine_l
+    backend: dfine
+    checkpoint: {hf_repo: ustc-community/dfine-large-coco}
+  - name: frcnn_r50_fpn_v2
+    backend: torchvision
+    checkpoint:
+      torchvision_weights: FasterRCNN_ResNet50_FPN_V2_Weights.COCO_V1
+      file: fasterrcnn_resnet50_fpn_v2_coco-dd69338a.pth
+
+# Longer side of the network input in pixels, a multiple of 32.
+resolutions: [640, 960, 1280]

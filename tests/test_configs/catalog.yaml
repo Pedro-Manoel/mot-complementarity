@@ -1,0 +1,29 @@
+# A frozen catalog for the integration tests: 3 detectors x 640/800/1280 x 3 tracker families = 27 configurations.
+# The mechanics tests (plan, detect, track, evaluate) do not depend on the catalog of the paper, so changing
+# configs/catalog.yaml does not change their counts.
+schema_version: 1
+
+detection:
+  conf_floor: 0.01
+  max_det: 300
+  precision: fp32
+
+tracking:
+  lost_track_seconds: 1.0
+  high_score_thresh: 0.45
+  confirm_frames: 2
+
+detectors:
+  - name: yolo26m
+    backend: ultralytics
+    checkpoint: {file: yolo26m.pt}
+  - name: dfine_l
+    backend: dfine
+    checkpoint: {hf_repo: ustc-community/dfine-large-coco}
+  - name: frcnn_r50_fpn_v2
+    backend: torchvision
+    checkpoint:
+      torchvision_weights: FasterRCNN_ResNet50_FPN_V2_Weights.COCO_V1
+      file: fasterrcnn_resnet50_fpn_v2_coco-dd69338a.pth
+
+resolutions: [640, 800, 1280]

@@ -1,0 +1,20 @@
+# A frozen experiment for the integration tests. Relative paths are resolved from this folder.
+schema_version: 1
+
+catalog: catalog.yaml
+trackers: trackers.yaml
+paths: paths.local.yaml
+corpus_manifest: ../manifests/corpus.csv
+resolved_catalog: ../manifests/catalog.resolved.json
+
+quality:
+  replicate_seeds: [42]
+
+option_check:
+  seal: ../manifests/option_check.json
+  frames_per_geometry: 2
+  tracker_clip: {sequence: MOT20/MOT20-01, frames: 100, detector_variant: yolo26m_r1280}
+
+evaluation:
+  do_preproc: true
+  metrics: [HOTA, CLEAR, Identity]

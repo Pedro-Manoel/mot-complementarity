@@ -1,0 +1,28 @@
+# Versions of the environment of the published runs (Python 3.11.9, Windows 11); the main ones are also recorded in
+# manifests/environment.json.
+#
+# Install PyTorch with CUDA first; the PyPI wheel is CPU-only:
+#   pip install torch==2.8.0 torchvision==0.23.0 --index-url https://download.pytorch.org/whl/cu129
+#
+# TrackEval runs in its own virtual environment (see README.md).
+
+ultralytics==8.4.33
+transformers==5.16.1
+huggingface_hub==1.9.0
+safetensors==0.8.0
+boxmot==17.0.0
+numpy==2.4.4
+pandas==2.3.3
+pyarrow==24.0.0
+scipy==1.17.1
+opencv-python==4.13.0.92
+pillow==12.2.0
+psutil==7.2.2
+PyYAML==6.0.3
+pytest==9.0.3
+
+# Indirect dependencies of BoxMOT that affect the numbers: the linear assignment and the Kalman filter. lapx and lap
+# install the same module; the runs used the files of lap 0.5.13 (see the README).
+lapx==0.9.4
+lap==0.5.13
+filterpy==1.4.5

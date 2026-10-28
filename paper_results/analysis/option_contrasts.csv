@@ -1,0 +1,16 @@
+factor,option,compared_with,combinations,combinations_option_better,mean_gain
+detector,dfine_l,frcnn_r50_fpn_v2,27,12,-0.5255203500024282
+detector,dfine_l,yolo26m,27,11,-1.4029934441097192
+detector,dfine_l,yolo26n,27,24,4.145234229392677
+detector,frcnn_r50_fpn_v2,yolo26m,27,7,-0.8774730941072908
+detector,frcnn_r50_fpn_v2,yolo26n,27,26,4.670754579395104
+detector,yolo26m,yolo26n,27,27,5.548227673502395
+resolution,960,640,36,36,3.2240715012480283
+resolution,1280,640,36,33,3.8522542234819377
+resolution,1280,960,36,27,0.6281827222339103
+tracker,botsort,bytetrack,36,36,2.326329699862492
+tracker,botsort,ocsort,36,36,3.6150507325339793
+tracker,bytetrack,ocsort,36,25,1.2887210326714875
+threshold,0.45,0.3,36,30,1.2872200016079083
+threshold,0.6,0.3,36,23,1.1071094612272598
+threshold,0.6,0.45,36,15,-0.18011054038064864

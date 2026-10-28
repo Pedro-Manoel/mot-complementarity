@@ -1,0 +1,4982 @@
+{
+ "schema_version": 1,
+ "created_utc": "2026-10-28T09:54:48Z",
+ "catalog_spec_sha256": "1a37534aea5eb693bed485bd92ffe2fe1ae7a70be9372dff3978fa35c2be1b2c",
+ "trackers_spec_sha256": "2ac9ff92c8c5a0d67405c31a92de8d65dc50dd50a608acea579656d603f160be",
+ "boxmot_distribution": "17.0.0",
+ "boxmot_module_version": "16.0.11",
+ "detector_variants": [
+  {
+   "detector_variant_id": "dfine_l_r1280",
+   "cache_key": "c3a60864fb32029f",
+   "detector": {
+    "name": "dfine_l",
+    "backend": "dfine",
+    "checkpoint": {
+     "hf_repo": "ustc-community/dfine-large-coco"
+    }
+   },
+   "resolution": {
+    "requested": 1280,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "checkpoint": {
+    "kind": "hf_snapshot",
+    "hf_repo": "ustc-community/dfine-large-coco",
+    "revision": "aa8f8211545e4cff5adf52ea512f9ac74a9824ec",
+    "files": {
+     "config.json": "f2c0253fc97a75269dc4016e373122f87f7efa7d675d4ad0dedea6f050136b8d",
+     "model.safetensors": "4e9d77ba937ab6eb8537b183c1c05372262daaa552e7682d721417042e24a8dc",
+     "preprocessor_config.json": "7e9e2245806aa3ef068a5321f5eebee3116fa4cec560173231954ffaca930eca"
+    },
+    "sha256": "e5b8c9657e47040a68580daba6c71569362095f30a8df36ad3f34cb82660b37c"
+   }
+  },
+  {
+   "detector_variant_id": "dfine_l_r640",
+   "cache_key": "a3d4917187a66d56",
+   "detector": {
+    "name": "dfine_l",
+    "backend": "dfine",
+    "checkpoint": {
+     "hf_repo": "ustc-community/dfine-large-coco"
+    }
+   },
+   "resolution": {
+    "requested": 640,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "checkpoint": {
+    "kind": "hf_snapshot",
+    "hf_repo": "ustc-community/dfine-large-coco",
+    "revision": "aa8f8211545e4cff5adf52ea512f9ac74a9824ec",
+    "files": {
+     "config.json": "f2c0253fc97a75269dc4016e373122f87f7efa7d675d4ad0dedea6f050136b8d",
+     "model.safetensors": "4e9d77ba937ab6eb8537b183c1c05372262daaa552e7682d721417042e24a8dc",
+     "preprocessor_config.json": "7e9e2245806aa3ef068a5321f5eebee3116fa4cec560173231954ffaca930eca"
+    },
+    "sha256": "e5b8c9657e47040a68580daba6c71569362095f30a8df36ad3f34cb82660b37c"
+   }
+  },
+  {
+   "detector_variant_id": "dfine_l_r960",
+   "cache_key": "dfd59f603dc9a3aa",
+   "detector": {
+    "name": "dfine_l",
+    "backend": "dfine",
+    "checkpoint": {
+     "hf_repo": "ustc-community/dfine-large-coco"
+    }
+   },
+   "resolution": {
+    "requested": 960,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "checkpoint": {
+    "kind": "hf_snapshot",
+    "hf_repo": "ustc-community/dfine-large-coco",
+    "revision": "aa8f8211545e4cff5adf52ea512f9ac74a9824ec",
+    "files": {
+     "config.json": "f2c0253fc97a75269dc4016e373122f87f7efa7d675d4ad0dedea6f050136b8d",
+     "model.safetensors": "4e9d77ba937ab6eb8537b183c1c05372262daaa552e7682d721417042e24a8dc",
+     "preprocessor_config.json": "7e9e2245806aa3ef068a5321f5eebee3116fa4cec560173231954ffaca930eca"
+    },
+    "sha256": "e5b8c9657e47040a68580daba6c71569362095f30a8df36ad3f34cb82660b37c"
+   }
+  },
+  {
+   "detector_variant_id": "frcnn_r50_fpn_v2_r1280",
+   "cache_key": "e3782e803cca43b6",
+   "detector": {
+    "name": "frcnn_r50_fpn_v2",
+    "backend": "torchvision",
+    "checkpoint": {
+     "torchvision_weights": "FasterRCNN_ResNet50_FPN_V2_Weights.COCO_V1",
+     "file": "fasterrcnn_resnet50_fpn_v2_coco-dd69338a.pth"
+    }
+   },
+   "resolution": {
+    "requested": 1280,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "checkpoint": {
+    "kind": "torch_hub",
+    "torchvision_weights": "FasterRCNN_ResNet50_FPN_V2_Weights.COCO_V1",
+    "file": "fasterrcnn_resnet50_fpn_v2_coco-dd69338a.pth",
+    "sha256": "dd69338a24b8d7381807e247652bdc356325bcbaf1cd3e092e00e0a1a58706bf",
+    "size": 175221657
+   }
+  },
+  {
+   "detector_variant_id": "frcnn_r50_fpn_v2_r640",
+   "cache_key": "cfa16ccf22100c6d",
+   "detector": {
+    "name": "frcnn_r50_fpn_v2",
+    "backend": "torchvision",
+    "checkpoint": {
+     "torchvision_weights": "FasterRCNN_ResNet50_FPN_V2_Weights.COCO_V1",
+     "file": "fasterrcnn_resnet50_fpn_v2_coco-dd69338a.pth"
+    }
+   },
+   "resolution": {
+    "requested": 640,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "checkpoint": {
+    "kind": "torch_hub",
+    "torchvision_weights": "FasterRCNN_ResNet50_FPN_V2_Weights.COCO_V1",
+    "file": "fasterrcnn_resnet50_fpn_v2_coco-dd69338a.pth",
+    "sha256": "dd69338a24b8d7381807e247652bdc356325bcbaf1cd3e092e00e0a1a58706bf",
+    "size": 175221657
+   }
+  },
+  {
+   "detector_variant_id": "frcnn_r50_fpn_v2_r960",
+   "cache_key": "bc108d428f56aae0",
+   "detector": {
+    "name": "frcnn_r50_fpn_v2",
+    "backend": "torchvision",
+    "checkpoint": {
+     "torchvision_weights": "FasterRCNN_ResNet50_FPN_V2_Weights.COCO_V1",
+     "file": "fasterrcnn_resnet50_fpn_v2_coco-dd69338a.pth"
+    }
+   },
+   "resolution": {
+    "requested": 960,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "checkpoint": {
+    "kind": "torch_hub",
+    "torchvision_weights": "FasterRCNN_ResNet50_FPN_V2_Weights.COCO_V1",
+    "file": "fasterrcnn_resnet50_fpn_v2_coco-dd69338a.pth",
+    "sha256": "dd69338a24b8d7381807e247652bdc356325bcbaf1cd3e092e00e0a1a58706bf",
+    "size": 175221657
+   }
+  },
+  {
+   "detector_variant_id": "yolo26m_r1280",
+   "cache_key": "9deb57767507e11e",
+   "detector": {
+    "name": "yolo26m",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26m.pt"
+    }
+   },
+   "resolution": {
+    "requested": 1280,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "checkpoint": {
+    "kind": "file",
+    "file": "yolo26m.pt",
+    "sha256": "401cea9ab23ad19246ff7744859816bc599f350e93c9dd30367b6f0a0745d0b7",
+    "size": 44255705
+   }
+  },
+  {
+   "detector_variant_id": "yolo26m_r640",
+   "cache_key": "3a860b3466b5f58e",
+   "detector": {
+    "name": "yolo26m",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26m.pt"
+    }
+   },
+   "resolution": {
+    "requested": 640,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "checkpoint": {
+    "kind": "file",
+    "file": "yolo26m.pt",
+    "sha256": "401cea9ab23ad19246ff7744859816bc599f350e93c9dd30367b6f0a0745d0b7",
+    "size": 44255705
+   }
+  },
+  {
+   "detector_variant_id": "yolo26m_r960",
+   "cache_key": "9dd88d7de346f236",
+   "detector": {
+    "name": "yolo26m",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26m.pt"
+    }
+   },
+   "resolution": {
+    "requested": 960,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "checkpoint": {
+    "kind": "file",
+    "file": "yolo26m.pt",
+    "sha256": "401cea9ab23ad19246ff7744859816bc599f350e93c9dd30367b6f0a0745d0b7",
+    "size": 44255705
+   }
+  },
+  {
+   "detector_variant_id": "yolo26n_r1280",
+   "cache_key": "474cd6533acf8a53",
+   "detector": {
+    "name": "yolo26n",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26n.pt"
+    }
+   },
+   "resolution": {
+    "requested": 1280,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "checkpoint": {
+    "kind": "file",
+    "file": "yolo26n.pt",
+    "sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "size": 5544453
+   }
+  },
+  {
+   "detector_variant_id": "yolo26n_r640",
+   "cache_key": "f0bc6a4855ac0949",
+   "detector": {
+    "name": "yolo26n",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26n.pt"
+    }
+   },
+   "resolution": {
+    "requested": 640,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "checkpoint": {
+    "kind": "file",
+    "file": "yolo26n.pt",
+    "sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "size": 5544453
+   }
+  },
+  {
+   "detector_variant_id": "yolo26n_r960",
+   "cache_key": "492af7c8b952507e",
+   "detector": {
+    "name": "yolo26n",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26n.pt"
+    }
+   },
+   "resolution": {
+    "requested": 960,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "checkpoint": {
+    "kind": "file",
+    "file": "yolo26n.pt",
+    "sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "size": 5544453
+   }
+  }
+ ],
+ "configs": [
+  {
+   "schema_version": 1,
+   "config_id": "yolo26n_r640__bytetrack_h0.3",
+   "config_hash": "0ac4647ffd090106",
+   "detector_variant_id": "yolo26n_r640",
+   "cache_key": "f0bc6a4855ac0949",
+   "detector": {
+    "name": "yolo26n",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26n.pt"
+    }
+   },
+   "resolution": {
+    "requested": 640,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "bytetrack_h0.3",
+    "family": "bytetrack",
+    "profile": {
+     "match_thresh": 0.8,
+     "min_conf": 0.1,
+     "per_class": false,
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.3,
+     "confirm_frames": 2
+    },
+    "profile_hash": "880591b231c62cde",
+    "levels": {
+     "high_score_thresh": 0.3
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26n_r640__ocsort_h0.3",
+   "config_hash": "47ce413accf37422",
+   "detector_variant_id": "yolo26n_r640",
+   "cache_key": "f0bc6a4855ac0949",
+   "detector": {
+    "name": "yolo26n",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26n.pt"
+    }
+   },
+   "resolution": {
+    "requested": 640,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "ocsort_h0.3",
+    "family": "ocsort",
+    "profile": {
+     "iou_threshold": 0.3,
+     "delta_t": 3,
+     "inertia": 0.2,
+     "use_byte": false,
+     "Q_xy_scaling": 0.01,
+     "Q_s_scaling": 0.0001,
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.3,
+     "confirm_frames": 2
+    },
+    "profile_hash": "c36f06dd41fbbdc5",
+    "levels": {
+     "high_score_thresh": 0.3
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26n_r640__botsort_h0.3",
+   "config_hash": "c44f8197079ed430",
+   "detector_variant_id": "yolo26n_r640",
+   "cache_key": "f0bc6a4855ac0949",
+   "detector": {
+    "name": "yolo26n",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26n.pt"
+    }
+   },
+   "resolution": {
+    "requested": 640,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "botsort_h0.3",
+    "family": "botsort",
+    "profile": {
+     "track_low_thresh": 0.1,
+     "match_thresh": 0.8,
+     "proximity_thresh": 0.5,
+     "appearance_thresh": 0.25,
+     "cmc_method": "ecc",
+     "with_reid": true,
+     "fuse_first_associate": false,
+     "reid_weights": "osnet_x0_25_msmt17",
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.3,
+     "confirm_frames": 2
+    },
+    "profile_hash": "2f87f1f3eb5fc827",
+    "levels": {
+     "high_score_thresh": 0.3
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26n_r640__bytetrack_h0.45",
+   "config_hash": "c3a1265965c35124",
+   "detector_variant_id": "yolo26n_r640",
+   "cache_key": "f0bc6a4855ac0949",
+   "detector": {
+    "name": "yolo26n",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26n.pt"
+    }
+   },
+   "resolution": {
+    "requested": 640,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "bytetrack_h0.45",
+    "family": "bytetrack",
+    "profile": {
+     "match_thresh": 0.8,
+     "min_conf": 0.1,
+     "per_class": false,
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.45,
+     "confirm_frames": 2
+    },
+    "profile_hash": "27c7863fd6cf30ec",
+    "levels": {
+     "high_score_thresh": 0.45
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26n_r640__ocsort_h0.45",
+   "config_hash": "7dc775b6a1956cf7",
+   "detector_variant_id": "yolo26n_r640",
+   "cache_key": "f0bc6a4855ac0949",
+   "detector": {
+    "name": "yolo26n",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26n.pt"
+    }
+   },
+   "resolution": {
+    "requested": 640,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "ocsort_h0.45",
+    "family": "ocsort",
+    "profile": {
+     "iou_threshold": 0.3,
+     "delta_t": 3,
+     "inertia": 0.2,
+     "use_byte": false,
+     "Q_xy_scaling": 0.01,
+     "Q_s_scaling": 0.0001,
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.45,
+     "confirm_frames": 2
+    },
+    "profile_hash": "5aaee0d8106f99c9",
+    "levels": {
+     "high_score_thresh": 0.45
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26n_r640__botsort_h0.45",
+   "config_hash": "5a167980a1b5efb5",
+   "detector_variant_id": "yolo26n_r640",
+   "cache_key": "f0bc6a4855ac0949",
+   "detector": {
+    "name": "yolo26n",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26n.pt"
+    }
+   },
+   "resolution": {
+    "requested": 640,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "botsort_h0.45",
+    "family": "botsort",
+    "profile": {
+     "track_low_thresh": 0.1,
+     "match_thresh": 0.8,
+     "proximity_thresh": 0.5,
+     "appearance_thresh": 0.25,
+     "cmc_method": "ecc",
+     "with_reid": true,
+     "fuse_first_associate": false,
+     "reid_weights": "osnet_x0_25_msmt17",
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.45,
+     "confirm_frames": 2
+    },
+    "profile_hash": "1bd652174dcab5b2",
+    "levels": {
+     "high_score_thresh": 0.45
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26n_r640__bytetrack_h0.6",
+   "config_hash": "5e83abeaed209168",
+   "detector_variant_id": "yolo26n_r640",
+   "cache_key": "f0bc6a4855ac0949",
+   "detector": {
+    "name": "yolo26n",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26n.pt"
+    }
+   },
+   "resolution": {
+    "requested": 640,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "bytetrack_h0.6",
+    "family": "bytetrack",
+    "profile": {
+     "match_thresh": 0.8,
+     "min_conf": 0.1,
+     "per_class": false,
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.6,
+     "confirm_frames": 2
+    },
+    "profile_hash": "db623fc22a37f59f",
+    "levels": {
+     "high_score_thresh": 0.6
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26n_r640__ocsort_h0.6",
+   "config_hash": "e87b87baf0a5fcf8",
+   "detector_variant_id": "yolo26n_r640",
+   "cache_key": "f0bc6a4855ac0949",
+   "detector": {
+    "name": "yolo26n",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26n.pt"
+    }
+   },
+   "resolution": {
+    "requested": 640,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "ocsort_h0.6",
+    "family": "ocsort",
+    "profile": {
+     "iou_threshold": 0.3,
+     "delta_t": 3,
+     "inertia": 0.2,
+     "use_byte": false,
+     "Q_xy_scaling": 0.01,
+     "Q_s_scaling": 0.0001,
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.6,
+     "confirm_frames": 2
+    },
+    "profile_hash": "65c6a28cf7d5f9d4",
+    "levels": {
+     "high_score_thresh": 0.6
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26n_r640__botsort_h0.6",
+   "config_hash": "3525fef0419af2ae",
+   "detector_variant_id": "yolo26n_r640",
+   "cache_key": "f0bc6a4855ac0949",
+   "detector": {
+    "name": "yolo26n",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26n.pt"
+    }
+   },
+   "resolution": {
+    "requested": 640,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "botsort_h0.6",
+    "family": "botsort",
+    "profile": {
+     "track_low_thresh": 0.1,
+     "match_thresh": 0.8,
+     "proximity_thresh": 0.5,
+     "appearance_thresh": 0.25,
+     "cmc_method": "ecc",
+     "with_reid": true,
+     "fuse_first_associate": false,
+     "reid_weights": "osnet_x0_25_msmt17",
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.6,
+     "confirm_frames": 2
+    },
+    "profile_hash": "ebb16a662cf37488",
+    "levels": {
+     "high_score_thresh": 0.6
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26n_r960__bytetrack_h0.3",
+   "config_hash": "864ec3a14f114e99",
+   "detector_variant_id": "yolo26n_r960",
+   "cache_key": "492af7c8b952507e",
+   "detector": {
+    "name": "yolo26n",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26n.pt"
+    }
+   },
+   "resolution": {
+    "requested": 960,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "bytetrack_h0.3",
+    "family": "bytetrack",
+    "profile": {
+     "match_thresh": 0.8,
+     "min_conf": 0.1,
+     "per_class": false,
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.3,
+     "confirm_frames": 2
+    },
+    "profile_hash": "880591b231c62cde",
+    "levels": {
+     "high_score_thresh": 0.3
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26n_r960__ocsort_h0.3",
+   "config_hash": "ca5da23f3d99e931",
+   "detector_variant_id": "yolo26n_r960",
+   "cache_key": "492af7c8b952507e",
+   "detector": {
+    "name": "yolo26n",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26n.pt"
+    }
+   },
+   "resolution": {
+    "requested": 960,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "ocsort_h0.3",
+    "family": "ocsort",
+    "profile": {
+     "iou_threshold": 0.3,
+     "delta_t": 3,
+     "inertia": 0.2,
+     "use_byte": false,
+     "Q_xy_scaling": 0.01,
+     "Q_s_scaling": 0.0001,
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.3,
+     "confirm_frames": 2
+    },
+    "profile_hash": "c36f06dd41fbbdc5",
+    "levels": {
+     "high_score_thresh": 0.3
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26n_r960__botsort_h0.3",
+   "config_hash": "6d1dc7b24d6abede",
+   "detector_variant_id": "yolo26n_r960",
+   "cache_key": "492af7c8b952507e",
+   "detector": {
+    "name": "yolo26n",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26n.pt"
+    }
+   },
+   "resolution": {
+    "requested": 960,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "botsort_h0.3",
+    "family": "botsort",
+    "profile": {
+     "track_low_thresh": 0.1,
+     "match_thresh": 0.8,
+     "proximity_thresh": 0.5,
+     "appearance_thresh": 0.25,
+     "cmc_method": "ecc",
+     "with_reid": true,
+     "fuse_first_associate": false,
+     "reid_weights": "osnet_x0_25_msmt17",
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.3,
+     "confirm_frames": 2
+    },
+    "profile_hash": "2f87f1f3eb5fc827",
+    "levels": {
+     "high_score_thresh": 0.3
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26n_r960__bytetrack_h0.45",
+   "config_hash": "439b4f87cf88a04a",
+   "detector_variant_id": "yolo26n_r960",
+   "cache_key": "492af7c8b952507e",
+   "detector": {
+    "name": "yolo26n",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26n.pt"
+    }
+   },
+   "resolution": {
+    "requested": 960,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "bytetrack_h0.45",
+    "family": "bytetrack",
+    "profile": {
+     "match_thresh": 0.8,
+     "min_conf": 0.1,
+     "per_class": false,
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.45,
+     "confirm_frames": 2
+    },
+    "profile_hash": "27c7863fd6cf30ec",
+    "levels": {
+     "high_score_thresh": 0.45
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26n_r960__ocsort_h0.45",
+   "config_hash": "24a30d41c359a484",
+   "detector_variant_id": "yolo26n_r960",
+   "cache_key": "492af7c8b952507e",
+   "detector": {
+    "name": "yolo26n",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26n.pt"
+    }
+   },
+   "resolution": {
+    "requested": 960,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "ocsort_h0.45",
+    "family": "ocsort",
+    "profile": {
+     "iou_threshold": 0.3,
+     "delta_t": 3,
+     "inertia": 0.2,
+     "use_byte": false,
+     "Q_xy_scaling": 0.01,
+     "Q_s_scaling": 0.0001,
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.45,
+     "confirm_frames": 2
+    },
+    "profile_hash": "5aaee0d8106f99c9",
+    "levels": {
+     "high_score_thresh": 0.45
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26n_r960__botsort_h0.45",
+   "config_hash": "a294767f79ad02f9",
+   "detector_variant_id": "yolo26n_r960",
+   "cache_key": "492af7c8b952507e",
+   "detector": {
+    "name": "yolo26n",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26n.pt"
+    }
+   },
+   "resolution": {
+    "requested": 960,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "botsort_h0.45",
+    "family": "botsort",
+    "profile": {
+     "track_low_thresh": 0.1,
+     "match_thresh": 0.8,
+     "proximity_thresh": 0.5,
+     "appearance_thresh": 0.25,
+     "cmc_method": "ecc",
+     "with_reid": true,
+     "fuse_first_associate": false,
+     "reid_weights": "osnet_x0_25_msmt17",
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.45,
+     "confirm_frames": 2
+    },
+    "profile_hash": "1bd652174dcab5b2",
+    "levels": {
+     "high_score_thresh": 0.45
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26n_r960__bytetrack_h0.6",
+   "config_hash": "b00db5e5af78030f",
+   "detector_variant_id": "yolo26n_r960",
+   "cache_key": "492af7c8b952507e",
+   "detector": {
+    "name": "yolo26n",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26n.pt"
+    }
+   },
+   "resolution": {
+    "requested": 960,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "bytetrack_h0.6",
+    "family": "bytetrack",
+    "profile": {
+     "match_thresh": 0.8,
+     "min_conf": 0.1,
+     "per_class": false,
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.6,
+     "confirm_frames": 2
+    },
+    "profile_hash": "db623fc22a37f59f",
+    "levels": {
+     "high_score_thresh": 0.6
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26n_r960__ocsort_h0.6",
+   "config_hash": "071bc5011487212d",
+   "detector_variant_id": "yolo26n_r960",
+   "cache_key": "492af7c8b952507e",
+   "detector": {
+    "name": "yolo26n",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26n.pt"
+    }
+   },
+   "resolution": {
+    "requested": 960,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "ocsort_h0.6",
+    "family": "ocsort",
+    "profile": {
+     "iou_threshold": 0.3,
+     "delta_t": 3,
+     "inertia": 0.2,
+     "use_byte": false,
+     "Q_xy_scaling": 0.01,
+     "Q_s_scaling": 0.0001,
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.6,
+     "confirm_frames": 2
+    },
+    "profile_hash": "65c6a28cf7d5f9d4",
+    "levels": {
+     "high_score_thresh": 0.6
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26n_r960__botsort_h0.6",
+   "config_hash": "4ae44bcecf7aba14",
+   "detector_variant_id": "yolo26n_r960",
+   "cache_key": "492af7c8b952507e",
+   "detector": {
+    "name": "yolo26n",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26n.pt"
+    }
+   },
+   "resolution": {
+    "requested": 960,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "botsort_h0.6",
+    "family": "botsort",
+    "profile": {
+     "track_low_thresh": 0.1,
+     "match_thresh": 0.8,
+     "proximity_thresh": 0.5,
+     "appearance_thresh": 0.25,
+     "cmc_method": "ecc",
+     "with_reid": true,
+     "fuse_first_associate": false,
+     "reid_weights": "osnet_x0_25_msmt17",
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.6,
+     "confirm_frames": 2
+    },
+    "profile_hash": "ebb16a662cf37488",
+    "levels": {
+     "high_score_thresh": 0.6
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26n_r1280__bytetrack_h0.3",
+   "config_hash": "f01a437987dfc509",
+   "detector_variant_id": "yolo26n_r1280",
+   "cache_key": "474cd6533acf8a53",
+   "detector": {
+    "name": "yolo26n",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26n.pt"
+    }
+   },
+   "resolution": {
+    "requested": 1280,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "bytetrack_h0.3",
+    "family": "bytetrack",
+    "profile": {
+     "match_thresh": 0.8,
+     "min_conf": 0.1,
+     "per_class": false,
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.3,
+     "confirm_frames": 2
+    },
+    "profile_hash": "880591b231c62cde",
+    "levels": {
+     "high_score_thresh": 0.3
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26n_r1280__ocsort_h0.3",
+   "config_hash": "2148f77368a03e96",
+   "detector_variant_id": "yolo26n_r1280",
+   "cache_key": "474cd6533acf8a53",
+   "detector": {
+    "name": "yolo26n",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26n.pt"
+    }
+   },
+   "resolution": {
+    "requested": 1280,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "ocsort_h0.3",
+    "family": "ocsort",
+    "profile": {
+     "iou_threshold": 0.3,
+     "delta_t": 3,
+     "inertia": 0.2,
+     "use_byte": false,
+     "Q_xy_scaling": 0.01,
+     "Q_s_scaling": 0.0001,
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.3,
+     "confirm_frames": 2
+    },
+    "profile_hash": "c36f06dd41fbbdc5",
+    "levels": {
+     "high_score_thresh": 0.3
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26n_r1280__botsort_h0.3",
+   "config_hash": "e5d5241bbccd3601",
+   "detector_variant_id": "yolo26n_r1280",
+   "cache_key": "474cd6533acf8a53",
+   "detector": {
+    "name": "yolo26n",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26n.pt"
+    }
+   },
+   "resolution": {
+    "requested": 1280,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "botsort_h0.3",
+    "family": "botsort",
+    "profile": {
+     "track_low_thresh": 0.1,
+     "match_thresh": 0.8,
+     "proximity_thresh": 0.5,
+     "appearance_thresh": 0.25,
+     "cmc_method": "ecc",
+     "with_reid": true,
+     "fuse_first_associate": false,
+     "reid_weights": "osnet_x0_25_msmt17",
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.3,
+     "confirm_frames": 2
+    },
+    "profile_hash": "2f87f1f3eb5fc827",
+    "levels": {
+     "high_score_thresh": 0.3
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26n_r1280__bytetrack_h0.45",
+   "config_hash": "26a54329e84503ce",
+   "detector_variant_id": "yolo26n_r1280",
+   "cache_key": "474cd6533acf8a53",
+   "detector": {
+    "name": "yolo26n",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26n.pt"
+    }
+   },
+   "resolution": {
+    "requested": 1280,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "bytetrack_h0.45",
+    "family": "bytetrack",
+    "profile": {
+     "match_thresh": 0.8,
+     "min_conf": 0.1,
+     "per_class": false,
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.45,
+     "confirm_frames": 2
+    },
+    "profile_hash": "27c7863fd6cf30ec",
+    "levels": {
+     "high_score_thresh": 0.45
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26n_r1280__ocsort_h0.45",
+   "config_hash": "99c2b08d8272bce2",
+   "detector_variant_id": "yolo26n_r1280",
+   "cache_key": "474cd6533acf8a53",
+   "detector": {
+    "name": "yolo26n",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26n.pt"
+    }
+   },
+   "resolution": {
+    "requested": 1280,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "ocsort_h0.45",
+    "family": "ocsort",
+    "profile": {
+     "iou_threshold": 0.3,
+     "delta_t": 3,
+     "inertia": 0.2,
+     "use_byte": false,
+     "Q_xy_scaling": 0.01,
+     "Q_s_scaling": 0.0001,
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.45,
+     "confirm_frames": 2
+    },
+    "profile_hash": "5aaee0d8106f99c9",
+    "levels": {
+     "high_score_thresh": 0.45
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26n_r1280__botsort_h0.45",
+   "config_hash": "edde1d9fe44dccd4",
+   "detector_variant_id": "yolo26n_r1280",
+   "cache_key": "474cd6533acf8a53",
+   "detector": {
+    "name": "yolo26n",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26n.pt"
+    }
+   },
+   "resolution": {
+    "requested": 1280,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "botsort_h0.45",
+    "family": "botsort",
+    "profile": {
+     "track_low_thresh": 0.1,
+     "match_thresh": 0.8,
+     "proximity_thresh": 0.5,
+     "appearance_thresh": 0.25,
+     "cmc_method": "ecc",
+     "with_reid": true,
+     "fuse_first_associate": false,
+     "reid_weights": "osnet_x0_25_msmt17",
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.45,
+     "confirm_frames": 2
+    },
+    "profile_hash": "1bd652174dcab5b2",
+    "levels": {
+     "high_score_thresh": 0.45
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26n_r1280__bytetrack_h0.6",
+   "config_hash": "6f2a5971a9133de4",
+   "detector_variant_id": "yolo26n_r1280",
+   "cache_key": "474cd6533acf8a53",
+   "detector": {
+    "name": "yolo26n",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26n.pt"
+    }
+   },
+   "resolution": {
+    "requested": 1280,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "bytetrack_h0.6",
+    "family": "bytetrack",
+    "profile": {
+     "match_thresh": 0.8,
+     "min_conf": 0.1,
+     "per_class": false,
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.6,
+     "confirm_frames": 2
+    },
+    "profile_hash": "db623fc22a37f59f",
+    "levels": {
+     "high_score_thresh": 0.6
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26n_r1280__ocsort_h0.6",
+   "config_hash": "f1299b8caecd76ca",
+   "detector_variant_id": "yolo26n_r1280",
+   "cache_key": "474cd6533acf8a53",
+   "detector": {
+    "name": "yolo26n",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26n.pt"
+    }
+   },
+   "resolution": {
+    "requested": 1280,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "ocsort_h0.6",
+    "family": "ocsort",
+    "profile": {
+     "iou_threshold": 0.3,
+     "delta_t": 3,
+     "inertia": 0.2,
+     "use_byte": false,
+     "Q_xy_scaling": 0.01,
+     "Q_s_scaling": 0.0001,
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.6,
+     "confirm_frames": 2
+    },
+    "profile_hash": "65c6a28cf7d5f9d4",
+    "levels": {
+     "high_score_thresh": 0.6
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26n_r1280__botsort_h0.6",
+   "config_hash": "a1263bb32af62068",
+   "detector_variant_id": "yolo26n_r1280",
+   "cache_key": "474cd6533acf8a53",
+   "detector": {
+    "name": "yolo26n",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26n.pt"
+    }
+   },
+   "resolution": {
+    "requested": 1280,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "botsort_h0.6",
+    "family": "botsort",
+    "profile": {
+     "track_low_thresh": 0.1,
+     "match_thresh": 0.8,
+     "proximity_thresh": 0.5,
+     "appearance_thresh": 0.25,
+     "cmc_method": "ecc",
+     "with_reid": true,
+     "fuse_first_associate": false,
+     "reid_weights": "osnet_x0_25_msmt17",
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.6,
+     "confirm_frames": 2
+    },
+    "profile_hash": "ebb16a662cf37488",
+    "levels": {
+     "high_score_thresh": 0.6
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26m_r640__bytetrack_h0.3",
+   "config_hash": "2e4dd18a7bd1175c",
+   "detector_variant_id": "yolo26m_r640",
+   "cache_key": "3a860b3466b5f58e",
+   "detector": {
+    "name": "yolo26m",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26m.pt"
+    }
+   },
+   "resolution": {
+    "requested": 640,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "bytetrack_h0.3",
+    "family": "bytetrack",
+    "profile": {
+     "match_thresh": 0.8,
+     "min_conf": 0.1,
+     "per_class": false,
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.3,
+     "confirm_frames": 2
+    },
+    "profile_hash": "880591b231c62cde",
+    "levels": {
+     "high_score_thresh": 0.3
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26m_r640__ocsort_h0.3",
+   "config_hash": "09db14162cde7b55",
+   "detector_variant_id": "yolo26m_r640",
+   "cache_key": "3a860b3466b5f58e",
+   "detector": {
+    "name": "yolo26m",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26m.pt"
+    }
+   },
+   "resolution": {
+    "requested": 640,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "ocsort_h0.3",
+    "family": "ocsort",
+    "profile": {
+     "iou_threshold": 0.3,
+     "delta_t": 3,
+     "inertia": 0.2,
+     "use_byte": false,
+     "Q_xy_scaling": 0.01,
+     "Q_s_scaling": 0.0001,
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.3,
+     "confirm_frames": 2
+    },
+    "profile_hash": "c36f06dd41fbbdc5",
+    "levels": {
+     "high_score_thresh": 0.3
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26m_r640__botsort_h0.3",
+   "config_hash": "3e473349b42b5c46",
+   "detector_variant_id": "yolo26m_r640",
+   "cache_key": "3a860b3466b5f58e",
+   "detector": {
+    "name": "yolo26m",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26m.pt"
+    }
+   },
+   "resolution": {
+    "requested": 640,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "botsort_h0.3",
+    "family": "botsort",
+    "profile": {
+     "track_low_thresh": 0.1,
+     "match_thresh": 0.8,
+     "proximity_thresh": 0.5,
+     "appearance_thresh": 0.25,
+     "cmc_method": "ecc",
+     "with_reid": true,
+     "fuse_first_associate": false,
+     "reid_weights": "osnet_x0_25_msmt17",
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.3,
+     "confirm_frames": 2
+    },
+    "profile_hash": "2f87f1f3eb5fc827",
+    "levels": {
+     "high_score_thresh": 0.3
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26m_r640__bytetrack_h0.45",
+   "config_hash": "ff095ac766a76454",
+   "detector_variant_id": "yolo26m_r640",
+   "cache_key": "3a860b3466b5f58e",
+   "detector": {
+    "name": "yolo26m",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26m.pt"
+    }
+   },
+   "resolution": {
+    "requested": 640,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "bytetrack_h0.45",
+    "family": "bytetrack",
+    "profile": {
+     "match_thresh": 0.8,
+     "min_conf": 0.1,
+     "per_class": false,
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.45,
+     "confirm_frames": 2
+    },
+    "profile_hash": "27c7863fd6cf30ec",
+    "levels": {
+     "high_score_thresh": 0.45
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26m_r640__ocsort_h0.45",
+   "config_hash": "0d42f157d4a4b4b5",
+   "detector_variant_id": "yolo26m_r640",
+   "cache_key": "3a860b3466b5f58e",
+   "detector": {
+    "name": "yolo26m",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26m.pt"
+    }
+   },
+   "resolution": {
+    "requested": 640,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "ocsort_h0.45",
+    "family": "ocsort",
+    "profile": {
+     "iou_threshold": 0.3,
+     "delta_t": 3,
+     "inertia": 0.2,
+     "use_byte": false,
+     "Q_xy_scaling": 0.01,
+     "Q_s_scaling": 0.0001,
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.45,
+     "confirm_frames": 2
+    },
+    "profile_hash": "5aaee0d8106f99c9",
+    "levels": {
+     "high_score_thresh": 0.45
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26m_r640__botsort_h0.45",
+   "config_hash": "ebe957e7b2791985",
+   "detector_variant_id": "yolo26m_r640",
+   "cache_key": "3a860b3466b5f58e",
+   "detector": {
+    "name": "yolo26m",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26m.pt"
+    }
+   },
+   "resolution": {
+    "requested": 640,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "botsort_h0.45",
+    "family": "botsort",
+    "profile": {
+     "track_low_thresh": 0.1,
+     "match_thresh": 0.8,
+     "proximity_thresh": 0.5,
+     "appearance_thresh": 0.25,
+     "cmc_method": "ecc",
+     "with_reid": true,
+     "fuse_first_associate": false,
+     "reid_weights": "osnet_x0_25_msmt17",
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.45,
+     "confirm_frames": 2
+    },
+    "profile_hash": "1bd652174dcab5b2",
+    "levels": {
+     "high_score_thresh": 0.45
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26m_r640__bytetrack_h0.6",
+   "config_hash": "eced487afc7ca2c3",
+   "detector_variant_id": "yolo26m_r640",
+   "cache_key": "3a860b3466b5f58e",
+   "detector": {
+    "name": "yolo26m",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26m.pt"
+    }
+   },
+   "resolution": {
+    "requested": 640,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "bytetrack_h0.6",
+    "family": "bytetrack",
+    "profile": {
+     "match_thresh": 0.8,
+     "min_conf": 0.1,
+     "per_class": false,
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.6,
+     "confirm_frames": 2
+    },
+    "profile_hash": "db623fc22a37f59f",
+    "levels": {
+     "high_score_thresh": 0.6
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26m_r640__ocsort_h0.6",
+   "config_hash": "64b2a7792239e8b6",
+   "detector_variant_id": "yolo26m_r640",
+   "cache_key": "3a860b3466b5f58e",
+   "detector": {
+    "name": "yolo26m",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26m.pt"
+    }
+   },
+   "resolution": {
+    "requested": 640,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "ocsort_h0.6",
+    "family": "ocsort",
+    "profile": {
+     "iou_threshold": 0.3,
+     "delta_t": 3,
+     "inertia": 0.2,
+     "use_byte": false,
+     "Q_xy_scaling": 0.01,
+     "Q_s_scaling": 0.0001,
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.6,
+     "confirm_frames": 2
+    },
+    "profile_hash": "65c6a28cf7d5f9d4",
+    "levels": {
+     "high_score_thresh": 0.6
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26m_r640__botsort_h0.6",
+   "config_hash": "0c3ccfa07d68eb0d",
+   "detector_variant_id": "yolo26m_r640",
+   "cache_key": "3a860b3466b5f58e",
+   "detector": {
+    "name": "yolo26m",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26m.pt"
+    }
+   },
+   "resolution": {
+    "requested": 640,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "botsort_h0.6",
+    "family": "botsort",
+    "profile": {
+     "track_low_thresh": 0.1,
+     "match_thresh": 0.8,
+     "proximity_thresh": 0.5,
+     "appearance_thresh": 0.25,
+     "cmc_method": "ecc",
+     "with_reid": true,
+     "fuse_first_associate": false,
+     "reid_weights": "osnet_x0_25_msmt17",
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.6,
+     "confirm_frames": 2
+    },
+    "profile_hash": "ebb16a662cf37488",
+    "levels": {
+     "high_score_thresh": 0.6
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26m_r960__bytetrack_h0.3",
+   "config_hash": "68dad9aad8965731",
+   "detector_variant_id": "yolo26m_r960",
+   "cache_key": "9dd88d7de346f236",
+   "detector": {
+    "name": "yolo26m",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26m.pt"
+    }
+   },
+   "resolution": {
+    "requested": 960,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "bytetrack_h0.3",
+    "family": "bytetrack",
+    "profile": {
+     "match_thresh": 0.8,
+     "min_conf": 0.1,
+     "per_class": false,
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.3,
+     "confirm_frames": 2
+    },
+    "profile_hash": "880591b231c62cde",
+    "levels": {
+     "high_score_thresh": 0.3
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26m_r960__ocsort_h0.3",
+   "config_hash": "56a09ac6c3eabc2b",
+   "detector_variant_id": "yolo26m_r960",
+   "cache_key": "9dd88d7de346f236",
+   "detector": {
+    "name": "yolo26m",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26m.pt"
+    }
+   },
+   "resolution": {
+    "requested": 960,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "ocsort_h0.3",
+    "family": "ocsort",
+    "profile": {
+     "iou_threshold": 0.3,
+     "delta_t": 3,
+     "inertia": 0.2,
+     "use_byte": false,
+     "Q_xy_scaling": 0.01,
+     "Q_s_scaling": 0.0001,
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.3,
+     "confirm_frames": 2
+    },
+    "profile_hash": "c36f06dd41fbbdc5",
+    "levels": {
+     "high_score_thresh": 0.3
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26m_r960__botsort_h0.3",
+   "config_hash": "ae5a344ba8b2fb83",
+   "detector_variant_id": "yolo26m_r960",
+   "cache_key": "9dd88d7de346f236",
+   "detector": {
+    "name": "yolo26m",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26m.pt"
+    }
+   },
+   "resolution": {
+    "requested": 960,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "botsort_h0.3",
+    "family": "botsort",
+    "profile": {
+     "track_low_thresh": 0.1,
+     "match_thresh": 0.8,
+     "proximity_thresh": 0.5,
+     "appearance_thresh": 0.25,
+     "cmc_method": "ecc",
+     "with_reid": true,
+     "fuse_first_associate": false,
+     "reid_weights": "osnet_x0_25_msmt17",
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.3,
+     "confirm_frames": 2
+    },
+    "profile_hash": "2f87f1f3eb5fc827",
+    "levels": {
+     "high_score_thresh": 0.3
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26m_r960__bytetrack_h0.45",
+   "config_hash": "43cdab9ae6ddb383",
+   "detector_variant_id": "yolo26m_r960",
+   "cache_key": "9dd88d7de346f236",
+   "detector": {
+    "name": "yolo26m",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26m.pt"
+    }
+   },
+   "resolution": {
+    "requested": 960,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "bytetrack_h0.45",
+    "family": "bytetrack",
+    "profile": {
+     "match_thresh": 0.8,
+     "min_conf": 0.1,
+     "per_class": false,
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.45,
+     "confirm_frames": 2
+    },
+    "profile_hash": "27c7863fd6cf30ec",
+    "levels": {
+     "high_score_thresh": 0.45
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26m_r960__ocsort_h0.45",
+   "config_hash": "765fc6e56d842f7d",
+   "detector_variant_id": "yolo26m_r960",
+   "cache_key": "9dd88d7de346f236",
+   "detector": {
+    "name": "yolo26m",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26m.pt"
+    }
+   },
+   "resolution": {
+    "requested": 960,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "ocsort_h0.45",
+    "family": "ocsort",
+    "profile": {
+     "iou_threshold": 0.3,
+     "delta_t": 3,
+     "inertia": 0.2,
+     "use_byte": false,
+     "Q_xy_scaling": 0.01,
+     "Q_s_scaling": 0.0001,
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.45,
+     "confirm_frames": 2
+    },
+    "profile_hash": "5aaee0d8106f99c9",
+    "levels": {
+     "high_score_thresh": 0.45
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26m_r960__botsort_h0.45",
+   "config_hash": "c05a20e1b7d4297b",
+   "detector_variant_id": "yolo26m_r960",
+   "cache_key": "9dd88d7de346f236",
+   "detector": {
+    "name": "yolo26m",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26m.pt"
+    }
+   },
+   "resolution": {
+    "requested": 960,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "botsort_h0.45",
+    "family": "botsort",
+    "profile": {
+     "track_low_thresh": 0.1,
+     "match_thresh": 0.8,
+     "proximity_thresh": 0.5,
+     "appearance_thresh": 0.25,
+     "cmc_method": "ecc",
+     "with_reid": true,
+     "fuse_first_associate": false,
+     "reid_weights": "osnet_x0_25_msmt17",
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.45,
+     "confirm_frames": 2
+    },
+    "profile_hash": "1bd652174dcab5b2",
+    "levels": {
+     "high_score_thresh": 0.45
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26m_r960__bytetrack_h0.6",
+   "config_hash": "55599c4e628e8ecc",
+   "detector_variant_id": "yolo26m_r960",
+   "cache_key": "9dd88d7de346f236",
+   "detector": {
+    "name": "yolo26m",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26m.pt"
+    }
+   },
+   "resolution": {
+    "requested": 960,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "bytetrack_h0.6",
+    "family": "bytetrack",
+    "profile": {
+     "match_thresh": 0.8,
+     "min_conf": 0.1,
+     "per_class": false,
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.6,
+     "confirm_frames": 2
+    },
+    "profile_hash": "db623fc22a37f59f",
+    "levels": {
+     "high_score_thresh": 0.6
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26m_r960__ocsort_h0.6",
+   "config_hash": "243f26f3db7d9090",
+   "detector_variant_id": "yolo26m_r960",
+   "cache_key": "9dd88d7de346f236",
+   "detector": {
+    "name": "yolo26m",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26m.pt"
+    }
+   },
+   "resolution": {
+    "requested": 960,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "ocsort_h0.6",
+    "family": "ocsort",
+    "profile": {
+     "iou_threshold": 0.3,
+     "delta_t": 3,
+     "inertia": 0.2,
+     "use_byte": false,
+     "Q_xy_scaling": 0.01,
+     "Q_s_scaling": 0.0001,
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.6,
+     "confirm_frames": 2
+    },
+    "profile_hash": "65c6a28cf7d5f9d4",
+    "levels": {
+     "high_score_thresh": 0.6
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26m_r960__botsort_h0.6",
+   "config_hash": "80baf25ae01acd47",
+   "detector_variant_id": "yolo26m_r960",
+   "cache_key": "9dd88d7de346f236",
+   "detector": {
+    "name": "yolo26m",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26m.pt"
+    }
+   },
+   "resolution": {
+    "requested": 960,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "botsort_h0.6",
+    "family": "botsort",
+    "profile": {
+     "track_low_thresh": 0.1,
+     "match_thresh": 0.8,
+     "proximity_thresh": 0.5,
+     "appearance_thresh": 0.25,
+     "cmc_method": "ecc",
+     "with_reid": true,
+     "fuse_first_associate": false,
+     "reid_weights": "osnet_x0_25_msmt17",
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.6,
+     "confirm_frames": 2
+    },
+    "profile_hash": "ebb16a662cf37488",
+    "levels": {
+     "high_score_thresh": 0.6
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26m_r1280__bytetrack_h0.3",
+   "config_hash": "8fe6216408cb7215",
+   "detector_variant_id": "yolo26m_r1280",
+   "cache_key": "9deb57767507e11e",
+   "detector": {
+    "name": "yolo26m",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26m.pt"
+    }
+   },
+   "resolution": {
+    "requested": 1280,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "bytetrack_h0.3",
+    "family": "bytetrack",
+    "profile": {
+     "match_thresh": 0.8,
+     "min_conf": 0.1,
+     "per_class": false,
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.3,
+     "confirm_frames": 2
+    },
+    "profile_hash": "880591b231c62cde",
+    "levels": {
+     "high_score_thresh": 0.3
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26m_r1280__ocsort_h0.3",
+   "config_hash": "b0219fb615c31278",
+   "detector_variant_id": "yolo26m_r1280",
+   "cache_key": "9deb57767507e11e",
+   "detector": {
+    "name": "yolo26m",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26m.pt"
+    }
+   },
+   "resolution": {
+    "requested": 1280,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "ocsort_h0.3",
+    "family": "ocsort",
+    "profile": {
+     "iou_threshold": 0.3,
+     "delta_t": 3,
+     "inertia": 0.2,
+     "use_byte": false,
+     "Q_xy_scaling": 0.01,
+     "Q_s_scaling": 0.0001,
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.3,
+     "confirm_frames": 2
+    },
+    "profile_hash": "c36f06dd41fbbdc5",
+    "levels": {
+     "high_score_thresh": 0.3
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26m_r1280__botsort_h0.3",
+   "config_hash": "fdf7cdf0e1609a39",
+   "detector_variant_id": "yolo26m_r1280",
+   "cache_key": "9deb57767507e11e",
+   "detector": {
+    "name": "yolo26m",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26m.pt"
+    }
+   },
+   "resolution": {
+    "requested": 1280,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "botsort_h0.3",
+    "family": "botsort",
+    "profile": {
+     "track_low_thresh": 0.1,
+     "match_thresh": 0.8,
+     "proximity_thresh": 0.5,
+     "appearance_thresh": 0.25,
+     "cmc_method": "ecc",
+     "with_reid": true,
+     "fuse_first_associate": false,
+     "reid_weights": "osnet_x0_25_msmt17",
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.3,
+     "confirm_frames": 2
+    },
+    "profile_hash": "2f87f1f3eb5fc827",
+    "levels": {
+     "high_score_thresh": 0.3
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26m_r1280__bytetrack_h0.45",
+   "config_hash": "552573e066175ada",
+   "detector_variant_id": "yolo26m_r1280",
+   "cache_key": "9deb57767507e11e",
+   "detector": {
+    "name": "yolo26m",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26m.pt"
+    }
+   },
+   "resolution": {
+    "requested": 1280,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "bytetrack_h0.45",
+    "family": "bytetrack",
+    "profile": {
+     "match_thresh": 0.8,
+     "min_conf": 0.1,
+     "per_class": false,
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.45,
+     "confirm_frames": 2
+    },
+    "profile_hash": "27c7863fd6cf30ec",
+    "levels": {
+     "high_score_thresh": 0.45
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26m_r1280__ocsort_h0.45",
+   "config_hash": "45b222d4e3862160",
+   "detector_variant_id": "yolo26m_r1280",
+   "cache_key": "9deb57767507e11e",
+   "detector": {
+    "name": "yolo26m",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26m.pt"
+    }
+   },
+   "resolution": {
+    "requested": 1280,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "ocsort_h0.45",
+    "family": "ocsort",
+    "profile": {
+     "iou_threshold": 0.3,
+     "delta_t": 3,
+     "inertia": 0.2,
+     "use_byte": false,
+     "Q_xy_scaling": 0.01,
+     "Q_s_scaling": 0.0001,
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.45,
+     "confirm_frames": 2
+    },
+    "profile_hash": "5aaee0d8106f99c9",
+    "levels": {
+     "high_score_thresh": 0.45
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26m_r1280__botsort_h0.45",
+   "config_hash": "f22f66f83b3241aa",
+   "detector_variant_id": "yolo26m_r1280",
+   "cache_key": "9deb57767507e11e",
+   "detector": {
+    "name": "yolo26m",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26m.pt"
+    }
+   },
+   "resolution": {
+    "requested": 1280,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "botsort_h0.45",
+    "family": "botsort",
+    "profile": {
+     "track_low_thresh": 0.1,
+     "match_thresh": 0.8,
+     "proximity_thresh": 0.5,
+     "appearance_thresh": 0.25,
+     "cmc_method": "ecc",
+     "with_reid": true,
+     "fuse_first_associate": false,
+     "reid_weights": "osnet_x0_25_msmt17",
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.45,
+     "confirm_frames": 2
+    },
+    "profile_hash": "1bd652174dcab5b2",
+    "levels": {
+     "high_score_thresh": 0.45
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26m_r1280__bytetrack_h0.6",
+   "config_hash": "bb9be5ea087e34fb",
+   "detector_variant_id": "yolo26m_r1280",
+   "cache_key": "9deb57767507e11e",
+   "detector": {
+    "name": "yolo26m",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26m.pt"
+    }
+   },
+   "resolution": {
+    "requested": 1280,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "bytetrack_h0.6",
+    "family": "bytetrack",
+    "profile": {
+     "match_thresh": 0.8,
+     "min_conf": 0.1,
+     "per_class": false,
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.6,
+     "confirm_frames": 2
+    },
+    "profile_hash": "db623fc22a37f59f",
+    "levels": {
+     "high_score_thresh": 0.6
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26m_r1280__ocsort_h0.6",
+   "config_hash": "1ee0fff3dfd42db5",
+   "detector_variant_id": "yolo26m_r1280",
+   "cache_key": "9deb57767507e11e",
+   "detector": {
+    "name": "yolo26m",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26m.pt"
+    }
+   },
+   "resolution": {
+    "requested": 1280,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "ocsort_h0.6",
+    "family": "ocsort",
+    "profile": {
+     "iou_threshold": 0.3,
+     "delta_t": 3,
+     "inertia": 0.2,
+     "use_byte": false,
+     "Q_xy_scaling": 0.01,
+     "Q_s_scaling": 0.0001,
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.6,
+     "confirm_frames": 2
+    },
+    "profile_hash": "65c6a28cf7d5f9d4",
+    "levels": {
+     "high_score_thresh": 0.6
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "yolo26m_r1280__botsort_h0.6",
+   "config_hash": "1c7fb6fbd5e3da8d",
+   "detector_variant_id": "yolo26m_r1280",
+   "cache_key": "9deb57767507e11e",
+   "detector": {
+    "name": "yolo26m",
+    "backend": "ultralytics",
+    "checkpoint": {
+     "file": "yolo26m.pt"
+    }
+   },
+   "resolution": {
+    "requested": 1280,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "botsort_h0.6",
+    "family": "botsort",
+    "profile": {
+     "track_low_thresh": 0.1,
+     "match_thresh": 0.8,
+     "proximity_thresh": 0.5,
+     "appearance_thresh": 0.25,
+     "cmc_method": "ecc",
+     "with_reid": true,
+     "fuse_first_associate": false,
+     "reid_weights": "osnet_x0_25_msmt17",
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.6,
+     "confirm_frames": 2
+    },
+    "profile_hash": "ebb16a662cf37488",
+    "levels": {
+     "high_score_thresh": 0.6
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "dfine_l_r640__bytetrack_h0.3",
+   "config_hash": "f9d38dde2a2b5c5e",
+   "detector_variant_id": "dfine_l_r640",
+   "cache_key": "a3d4917187a66d56",
+   "detector": {
+    "name": "dfine_l",
+    "backend": "dfine",
+    "checkpoint": {
+     "hf_repo": "ustc-community/dfine-large-coco"
+    }
+   },
+   "resolution": {
+    "requested": 640,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "bytetrack_h0.3",
+    "family": "bytetrack",
+    "profile": {
+     "match_thresh": 0.8,
+     "min_conf": 0.1,
+     "per_class": false,
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.3,
+     "confirm_frames": 2
+    },
+    "profile_hash": "880591b231c62cde",
+    "levels": {
+     "high_score_thresh": 0.3
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "dfine_l_r640__ocsort_h0.3",
+   "config_hash": "a5535d6121c687e3",
+   "detector_variant_id": "dfine_l_r640",
+   "cache_key": "a3d4917187a66d56",
+   "detector": {
+    "name": "dfine_l",
+    "backend": "dfine",
+    "checkpoint": {
+     "hf_repo": "ustc-community/dfine-large-coco"
+    }
+   },
+   "resolution": {
+    "requested": 640,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "ocsort_h0.3",
+    "family": "ocsort",
+    "profile": {
+     "iou_threshold": 0.3,
+     "delta_t": 3,
+     "inertia": 0.2,
+     "use_byte": false,
+     "Q_xy_scaling": 0.01,
+     "Q_s_scaling": 0.0001,
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.3,
+     "confirm_frames": 2
+    },
+    "profile_hash": "c36f06dd41fbbdc5",
+    "levels": {
+     "high_score_thresh": 0.3
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "dfine_l_r640__botsort_h0.3",
+   "config_hash": "be12b2992cf5b3f4",
+   "detector_variant_id": "dfine_l_r640",
+   "cache_key": "a3d4917187a66d56",
+   "detector": {
+    "name": "dfine_l",
+    "backend": "dfine",
+    "checkpoint": {
+     "hf_repo": "ustc-community/dfine-large-coco"
+    }
+   },
+   "resolution": {
+    "requested": 640,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "botsort_h0.3",
+    "family": "botsort",
+    "profile": {
+     "track_low_thresh": 0.1,
+     "match_thresh": 0.8,
+     "proximity_thresh": 0.5,
+     "appearance_thresh": 0.25,
+     "cmc_method": "ecc",
+     "with_reid": true,
+     "fuse_first_associate": false,
+     "reid_weights": "osnet_x0_25_msmt17",
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.3,
+     "confirm_frames": 2
+    },
+    "profile_hash": "2f87f1f3eb5fc827",
+    "levels": {
+     "high_score_thresh": 0.3
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "dfine_l_r640__bytetrack_h0.45",
+   "config_hash": "271b8647b1b4f5c6",
+   "detector_variant_id": "dfine_l_r640",
+   "cache_key": "a3d4917187a66d56",
+   "detector": {
+    "name": "dfine_l",
+    "backend": "dfine",
+    "checkpoint": {
+     "hf_repo": "ustc-community/dfine-large-coco"
+    }
+   },
+   "resolution": {
+    "requested": 640,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "bytetrack_h0.45",
+    "family": "bytetrack",
+    "profile": {
+     "match_thresh": 0.8,
+     "min_conf": 0.1,
+     "per_class": false,
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.45,
+     "confirm_frames": 2
+    },
+    "profile_hash": "27c7863fd6cf30ec",
+    "levels": {
+     "high_score_thresh": 0.45
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "dfine_l_r640__ocsort_h0.45",
+   "config_hash": "6921e7f431916b10",
+   "detector_variant_id": "dfine_l_r640",
+   "cache_key": "a3d4917187a66d56",
+   "detector": {
+    "name": "dfine_l",
+    "backend": "dfine",
+    "checkpoint": {
+     "hf_repo": "ustc-community/dfine-large-coco"
+    }
+   },
+   "resolution": {
+    "requested": 640,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "ocsort_h0.45",
+    "family": "ocsort",
+    "profile": {
+     "iou_threshold": 0.3,
+     "delta_t": 3,
+     "inertia": 0.2,
+     "use_byte": false,
+     "Q_xy_scaling": 0.01,
+     "Q_s_scaling": 0.0001,
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.45,
+     "confirm_frames": 2
+    },
+    "profile_hash": "5aaee0d8106f99c9",
+    "levels": {
+     "high_score_thresh": 0.45
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "dfine_l_r640__botsort_h0.45",
+   "config_hash": "9b8f30a5c6302b2e",
+   "detector_variant_id": "dfine_l_r640",
+   "cache_key": "a3d4917187a66d56",
+   "detector": {
+    "name": "dfine_l",
+    "backend": "dfine",
+    "checkpoint": {
+     "hf_repo": "ustc-community/dfine-large-coco"
+    }
+   },
+   "resolution": {
+    "requested": 640,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "botsort_h0.45",
+    "family": "botsort",
+    "profile": {
+     "track_low_thresh": 0.1,
+     "match_thresh": 0.8,
+     "proximity_thresh": 0.5,
+     "appearance_thresh": 0.25,
+     "cmc_method": "ecc",
+     "with_reid": true,
+     "fuse_first_associate": false,
+     "reid_weights": "osnet_x0_25_msmt17",
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.45,
+     "confirm_frames": 2
+    },
+    "profile_hash": "1bd652174dcab5b2",
+    "levels": {
+     "high_score_thresh": 0.45
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "dfine_l_r640__bytetrack_h0.6",
+   "config_hash": "8a213624c6eae0ef",
+   "detector_variant_id": "dfine_l_r640",
+   "cache_key": "a3d4917187a66d56",
+   "detector": {
+    "name": "dfine_l",
+    "backend": "dfine",
+    "checkpoint": {
+     "hf_repo": "ustc-community/dfine-large-coco"
+    }
+   },
+   "resolution": {
+    "requested": 640,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "bytetrack_h0.6",
+    "family": "bytetrack",
+    "profile": {
+     "match_thresh": 0.8,
+     "min_conf": 0.1,
+     "per_class": false,
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.6,
+     "confirm_frames": 2
+    },
+    "profile_hash": "db623fc22a37f59f",
+    "levels": {
+     "high_score_thresh": 0.6
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "dfine_l_r640__ocsort_h0.6",
+   "config_hash": "9074d58a3ab881cd",
+   "detector_variant_id": "dfine_l_r640",
+   "cache_key": "a3d4917187a66d56",
+   "detector": {
+    "name": "dfine_l",
+    "backend": "dfine",
+    "checkpoint": {
+     "hf_repo": "ustc-community/dfine-large-coco"
+    }
+   },
+   "resolution": {
+    "requested": 640,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "ocsort_h0.6",
+    "family": "ocsort",
+    "profile": {
+     "iou_threshold": 0.3,
+     "delta_t": 3,
+     "inertia": 0.2,
+     "use_byte": false,
+     "Q_xy_scaling": 0.01,
+     "Q_s_scaling": 0.0001,
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.6,
+     "confirm_frames": 2
+    },
+    "profile_hash": "65c6a28cf7d5f9d4",
+    "levels": {
+     "high_score_thresh": 0.6
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "dfine_l_r640__botsort_h0.6",
+   "config_hash": "5ad2c57cccb9bdc1",
+   "detector_variant_id": "dfine_l_r640",
+   "cache_key": "a3d4917187a66d56",
+   "detector": {
+    "name": "dfine_l",
+    "backend": "dfine",
+    "checkpoint": {
+     "hf_repo": "ustc-community/dfine-large-coco"
+    }
+   },
+   "resolution": {
+    "requested": 640,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "botsort_h0.6",
+    "family": "botsort",
+    "profile": {
+     "track_low_thresh": 0.1,
+     "match_thresh": 0.8,
+     "proximity_thresh": 0.5,
+     "appearance_thresh": 0.25,
+     "cmc_method": "ecc",
+     "with_reid": true,
+     "fuse_first_associate": false,
+     "reid_weights": "osnet_x0_25_msmt17",
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.6,
+     "confirm_frames": 2
+    },
+    "profile_hash": "ebb16a662cf37488",
+    "levels": {
+     "high_score_thresh": 0.6
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "dfine_l_r960__bytetrack_h0.3",
+   "config_hash": "a1634cf3793ac65e",
+   "detector_variant_id": "dfine_l_r960",
+   "cache_key": "dfd59f603dc9a3aa",
+   "detector": {
+    "name": "dfine_l",
+    "backend": "dfine",
+    "checkpoint": {
+     "hf_repo": "ustc-community/dfine-large-coco"
+    }
+   },
+   "resolution": {
+    "requested": 960,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "bytetrack_h0.3",
+    "family": "bytetrack",
+    "profile": {
+     "match_thresh": 0.8,
+     "min_conf": 0.1,
+     "per_class": false,
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.3,
+     "confirm_frames": 2
+    },
+    "profile_hash": "880591b231c62cde",
+    "levels": {
+     "high_score_thresh": 0.3
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "dfine_l_r960__ocsort_h0.3",
+   "config_hash": "b1c70583a9dea19f",
+   "detector_variant_id": "dfine_l_r960",
+   "cache_key": "dfd59f603dc9a3aa",
+   "detector": {
+    "name": "dfine_l",
+    "backend": "dfine",
+    "checkpoint": {
+     "hf_repo": "ustc-community/dfine-large-coco"
+    }
+   },
+   "resolution": {
+    "requested": 960,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "ocsort_h0.3",
+    "family": "ocsort",
+    "profile": {
+     "iou_threshold": 0.3,
+     "delta_t": 3,
+     "inertia": 0.2,
+     "use_byte": false,
+     "Q_xy_scaling": 0.01,
+     "Q_s_scaling": 0.0001,
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.3,
+     "confirm_frames": 2
+    },
+    "profile_hash": "c36f06dd41fbbdc5",
+    "levels": {
+     "high_score_thresh": 0.3
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "dfine_l_r960__botsort_h0.3",
+   "config_hash": "ee5f4598cf56b529",
+   "detector_variant_id": "dfine_l_r960",
+   "cache_key": "dfd59f603dc9a3aa",
+   "detector": {
+    "name": "dfine_l",
+    "backend": "dfine",
+    "checkpoint": {
+     "hf_repo": "ustc-community/dfine-large-coco"
+    }
+   },
+   "resolution": {
+    "requested": 960,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "botsort_h0.3",
+    "family": "botsort",
+    "profile": {
+     "track_low_thresh": 0.1,
+     "match_thresh": 0.8,
+     "proximity_thresh": 0.5,
+     "appearance_thresh": 0.25,
+     "cmc_method": "ecc",
+     "with_reid": true,
+     "fuse_first_associate": false,
+     "reid_weights": "osnet_x0_25_msmt17",
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.3,
+     "confirm_frames": 2
+    },
+    "profile_hash": "2f87f1f3eb5fc827",
+    "levels": {
+     "high_score_thresh": 0.3
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "dfine_l_r960__bytetrack_h0.45",
+   "config_hash": "1b6b144e31870225",
+   "detector_variant_id": "dfine_l_r960",
+   "cache_key": "dfd59f603dc9a3aa",
+   "detector": {
+    "name": "dfine_l",
+    "backend": "dfine",
+    "checkpoint": {
+     "hf_repo": "ustc-community/dfine-large-coco"
+    }
+   },
+   "resolution": {
+    "requested": 960,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "bytetrack_h0.45",
+    "family": "bytetrack",
+    "profile": {
+     "match_thresh": 0.8,
+     "min_conf": 0.1,
+     "per_class": false,
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.45,
+     "confirm_frames": 2
+    },
+    "profile_hash": "27c7863fd6cf30ec",
+    "levels": {
+     "high_score_thresh": 0.45
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "dfine_l_r960__ocsort_h0.45",
+   "config_hash": "43117bacdcdf32c5",
+   "detector_variant_id": "dfine_l_r960",
+   "cache_key": "dfd59f603dc9a3aa",
+   "detector": {
+    "name": "dfine_l",
+    "backend": "dfine",
+    "checkpoint": {
+     "hf_repo": "ustc-community/dfine-large-coco"
+    }
+   },
+   "resolution": {
+    "requested": 960,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "ocsort_h0.45",
+    "family": "ocsort",
+    "profile": {
+     "iou_threshold": 0.3,
+     "delta_t": 3,
+     "inertia": 0.2,
+     "use_byte": false,
+     "Q_xy_scaling": 0.01,
+     "Q_s_scaling": 0.0001,
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.45,
+     "confirm_frames": 2
+    },
+    "profile_hash": "5aaee0d8106f99c9",
+    "levels": {
+     "high_score_thresh": 0.45
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "dfine_l_r960__botsort_h0.45",
+   "config_hash": "9b1d0306d5a374d1",
+   "detector_variant_id": "dfine_l_r960",
+   "cache_key": "dfd59f603dc9a3aa",
+   "detector": {
+    "name": "dfine_l",
+    "backend": "dfine",
+    "checkpoint": {
+     "hf_repo": "ustc-community/dfine-large-coco"
+    }
+   },
+   "resolution": {
+    "requested": 960,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "botsort_h0.45",
+    "family": "botsort",
+    "profile": {
+     "track_low_thresh": 0.1,
+     "match_thresh": 0.8,
+     "proximity_thresh": 0.5,
+     "appearance_thresh": 0.25,
+     "cmc_method": "ecc",
+     "with_reid": true,
+     "fuse_first_associate": false,
+     "reid_weights": "osnet_x0_25_msmt17",
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.45,
+     "confirm_frames": 2
+    },
+    "profile_hash": "1bd652174dcab5b2",
+    "levels": {
+     "high_score_thresh": 0.45
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "dfine_l_r960__bytetrack_h0.6",
+   "config_hash": "d9811a84c90fb64b",
+   "detector_variant_id": "dfine_l_r960",
+   "cache_key": "dfd59f603dc9a3aa",
+   "detector": {
+    "name": "dfine_l",
+    "backend": "dfine",
+    "checkpoint": {
+     "hf_repo": "ustc-community/dfine-large-coco"
+    }
+   },
+   "resolution": {
+    "requested": 960,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "bytetrack_h0.6",
+    "family": "bytetrack",
+    "profile": {
+     "match_thresh": 0.8,
+     "min_conf": 0.1,
+     "per_class": false,
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.6,
+     "confirm_frames": 2
+    },
+    "profile_hash": "db623fc22a37f59f",
+    "levels": {
+     "high_score_thresh": 0.6
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "dfine_l_r960__ocsort_h0.6",
+   "config_hash": "749885f1c6f5e3ab",
+   "detector_variant_id": "dfine_l_r960",
+   "cache_key": "dfd59f603dc9a3aa",
+   "detector": {
+    "name": "dfine_l",
+    "backend": "dfine",
+    "checkpoint": {
+     "hf_repo": "ustc-community/dfine-large-coco"
+    }
+   },
+   "resolution": {
+    "requested": 960,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "ocsort_h0.6",
+    "family": "ocsort",
+    "profile": {
+     "iou_threshold": 0.3,
+     "delta_t": 3,
+     "inertia": 0.2,
+     "use_byte": false,
+     "Q_xy_scaling": 0.01,
+     "Q_s_scaling": 0.0001,
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.6,
+     "confirm_frames": 2
+    },
+    "profile_hash": "65c6a28cf7d5f9d4",
+    "levels": {
+     "high_score_thresh": 0.6
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "dfine_l_r960__botsort_h0.6",
+   "config_hash": "358797c581bb5a14",
+   "detector_variant_id": "dfine_l_r960",
+   "cache_key": "dfd59f603dc9a3aa",
+   "detector": {
+    "name": "dfine_l",
+    "backend": "dfine",
+    "checkpoint": {
+     "hf_repo": "ustc-community/dfine-large-coco"
+    }
+   },
+   "resolution": {
+    "requested": 960,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "botsort_h0.6",
+    "family": "botsort",
+    "profile": {
+     "track_low_thresh": 0.1,
+     "match_thresh": 0.8,
+     "proximity_thresh": 0.5,
+     "appearance_thresh": 0.25,
+     "cmc_method": "ecc",
+     "with_reid": true,
+     "fuse_first_associate": false,
+     "reid_weights": "osnet_x0_25_msmt17",
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.6,
+     "confirm_frames": 2
+    },
+    "profile_hash": "ebb16a662cf37488",
+    "levels": {
+     "high_score_thresh": 0.6
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "dfine_l_r1280__bytetrack_h0.3",
+   "config_hash": "56a013ddcc2694bb",
+   "detector_variant_id": "dfine_l_r1280",
+   "cache_key": "c3a60864fb32029f",
+   "detector": {
+    "name": "dfine_l",
+    "backend": "dfine",
+    "checkpoint": {
+     "hf_repo": "ustc-community/dfine-large-coco"
+    }
+   },
+   "resolution": {
+    "requested": 1280,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "bytetrack_h0.3",
+    "family": "bytetrack",
+    "profile": {
+     "match_thresh": 0.8,
+     "min_conf": 0.1,
+     "per_class": false,
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.3,
+     "confirm_frames": 2
+    },
+    "profile_hash": "880591b231c62cde",
+    "levels": {
+     "high_score_thresh": 0.3
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "dfine_l_r1280__ocsort_h0.3",
+   "config_hash": "868f00d8318949bf",
+   "detector_variant_id": "dfine_l_r1280",
+   "cache_key": "c3a60864fb32029f",
+   "detector": {
+    "name": "dfine_l",
+    "backend": "dfine",
+    "checkpoint": {
+     "hf_repo": "ustc-community/dfine-large-coco"
+    }
+   },
+   "resolution": {
+    "requested": 1280,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "ocsort_h0.3",
+    "family": "ocsort",
+    "profile": {
+     "iou_threshold": 0.3,
+     "delta_t": 3,
+     "inertia": 0.2,
+     "use_byte": false,
+     "Q_xy_scaling": 0.01,
+     "Q_s_scaling": 0.0001,
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.3,
+     "confirm_frames": 2
+    },
+    "profile_hash": "c36f06dd41fbbdc5",
+    "levels": {
+     "high_score_thresh": 0.3
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "dfine_l_r1280__botsort_h0.3",
+   "config_hash": "e00474da8021f5a1",
+   "detector_variant_id": "dfine_l_r1280",
+   "cache_key": "c3a60864fb32029f",
+   "detector": {
+    "name": "dfine_l",
+    "backend": "dfine",
+    "checkpoint": {
+     "hf_repo": "ustc-community/dfine-large-coco"
+    }
+   },
+   "resolution": {
+    "requested": 1280,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "botsort_h0.3",
+    "family": "botsort",
+    "profile": {
+     "track_low_thresh": 0.1,
+     "match_thresh": 0.8,
+     "proximity_thresh": 0.5,
+     "appearance_thresh": 0.25,
+     "cmc_method": "ecc",
+     "with_reid": true,
+     "fuse_first_associate": false,
+     "reid_weights": "osnet_x0_25_msmt17",
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.3,
+     "confirm_frames": 2
+    },
+    "profile_hash": "2f87f1f3eb5fc827",
+    "levels": {
+     "high_score_thresh": 0.3
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "dfine_l_r1280__bytetrack_h0.45",
+   "config_hash": "dd9ed4c61696e82e",
+   "detector_variant_id": "dfine_l_r1280",
+   "cache_key": "c3a60864fb32029f",
+   "detector": {
+    "name": "dfine_l",
+    "backend": "dfine",
+    "checkpoint": {
+     "hf_repo": "ustc-community/dfine-large-coco"
+    }
+   },
+   "resolution": {
+    "requested": 1280,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "bytetrack_h0.45",
+    "family": "bytetrack",
+    "profile": {
+     "match_thresh": 0.8,
+     "min_conf": 0.1,
+     "per_class": false,
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.45,
+     "confirm_frames": 2
+    },
+    "profile_hash": "27c7863fd6cf30ec",
+    "levels": {
+     "high_score_thresh": 0.45
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "dfine_l_r1280__ocsort_h0.45",
+   "config_hash": "9bb08d7e8cc6f1ce",
+   "detector_variant_id": "dfine_l_r1280",
+   "cache_key": "c3a60864fb32029f",
+   "detector": {
+    "name": "dfine_l",
+    "backend": "dfine",
+    "checkpoint": {
+     "hf_repo": "ustc-community/dfine-large-coco"
+    }
+   },
+   "resolution": {
+    "requested": 1280,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "ocsort_h0.45",
+    "family": "ocsort",
+    "profile": {
+     "iou_threshold": 0.3,
+     "delta_t": 3,
+     "inertia": 0.2,
+     "use_byte": false,
+     "Q_xy_scaling": 0.01,
+     "Q_s_scaling": 0.0001,
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.45,
+     "confirm_frames": 2
+    },
+    "profile_hash": "5aaee0d8106f99c9",
+    "levels": {
+     "high_score_thresh": 0.45
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "dfine_l_r1280__botsort_h0.45",
+   "config_hash": "d1181b12987bf627",
+   "detector_variant_id": "dfine_l_r1280",
+   "cache_key": "c3a60864fb32029f",
+   "detector": {
+    "name": "dfine_l",
+    "backend": "dfine",
+    "checkpoint": {
+     "hf_repo": "ustc-community/dfine-large-coco"
+    }
+   },
+   "resolution": {
+    "requested": 1280,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "botsort_h0.45",
+    "family": "botsort",
+    "profile": {
+     "track_low_thresh": 0.1,
+     "match_thresh": 0.8,
+     "proximity_thresh": 0.5,
+     "appearance_thresh": 0.25,
+     "cmc_method": "ecc",
+     "with_reid": true,
+     "fuse_first_associate": false,
+     "reid_weights": "osnet_x0_25_msmt17",
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.45,
+     "confirm_frames": 2
+    },
+    "profile_hash": "1bd652174dcab5b2",
+    "levels": {
+     "high_score_thresh": 0.45
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "dfine_l_r1280__bytetrack_h0.6",
+   "config_hash": "c43ca03228007f9a",
+   "detector_variant_id": "dfine_l_r1280",
+   "cache_key": "c3a60864fb32029f",
+   "detector": {
+    "name": "dfine_l",
+    "backend": "dfine",
+    "checkpoint": {
+     "hf_repo": "ustc-community/dfine-large-coco"
+    }
+   },
+   "resolution": {
+    "requested": 1280,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "bytetrack_h0.6",
+    "family": "bytetrack",
+    "profile": {
+     "match_thresh": 0.8,
+     "min_conf": 0.1,
+     "per_class": false,
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.6,
+     "confirm_frames": 2
+    },
+    "profile_hash": "db623fc22a37f59f",
+    "levels": {
+     "high_score_thresh": 0.6
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "dfine_l_r1280__ocsort_h0.6",
+   "config_hash": "d9a81f00d27df6a0",
+   "detector_variant_id": "dfine_l_r1280",
+   "cache_key": "c3a60864fb32029f",
+   "detector": {
+    "name": "dfine_l",
+    "backend": "dfine",
+    "checkpoint": {
+     "hf_repo": "ustc-community/dfine-large-coco"
+    }
+   },
+   "resolution": {
+    "requested": 1280,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "ocsort_h0.6",
+    "family": "ocsort",
+    "profile": {
+     "iou_threshold": 0.3,
+     "delta_t": 3,
+     "inertia": 0.2,
+     "use_byte": false,
+     "Q_xy_scaling": 0.01,
+     "Q_s_scaling": 0.0001,
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.6,
+     "confirm_frames": 2
+    },
+    "profile_hash": "65c6a28cf7d5f9d4",
+    "levels": {
+     "high_score_thresh": 0.6
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "dfine_l_r1280__botsort_h0.6",
+   "config_hash": "6849ab9a37e5c816",
+   "detector_variant_id": "dfine_l_r1280",
+   "cache_key": "c3a60864fb32029f",
+   "detector": {
+    "name": "dfine_l",
+    "backend": "dfine",
+    "checkpoint": {
+     "hf_repo": "ustc-community/dfine-large-coco"
+    }
+   },
+   "resolution": {
+    "requested": 1280,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "botsort_h0.6",
+    "family": "botsort",
+    "profile": {
+     "track_low_thresh": 0.1,
+     "match_thresh": 0.8,
+     "proximity_thresh": 0.5,
+     "appearance_thresh": 0.25,
+     "cmc_method": "ecc",
+     "with_reid": true,
+     "fuse_first_associate": false,
+     "reid_weights": "osnet_x0_25_msmt17",
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.6,
+     "confirm_frames": 2
+    },
+    "profile_hash": "ebb16a662cf37488",
+    "levels": {
+     "high_score_thresh": 0.6
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "frcnn_r50_fpn_v2_r640__bytetrack_h0.3",
+   "config_hash": "010f5f991f3d8a41",
+   "detector_variant_id": "frcnn_r50_fpn_v2_r640",
+   "cache_key": "cfa16ccf22100c6d",
+   "detector": {
+    "name": "frcnn_r50_fpn_v2",
+    "backend": "torchvision",
+    "checkpoint": {
+     "torchvision_weights": "FasterRCNN_ResNet50_FPN_V2_Weights.COCO_V1",
+     "file": "fasterrcnn_resnet50_fpn_v2_coco-dd69338a.pth"
+    }
+   },
+   "resolution": {
+    "requested": 640,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "bytetrack_h0.3",
+    "family": "bytetrack",
+    "profile": {
+     "match_thresh": 0.8,
+     "min_conf": 0.1,
+     "per_class": false,
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.3,
+     "confirm_frames": 2
+    },
+    "profile_hash": "880591b231c62cde",
+    "levels": {
+     "high_score_thresh": 0.3
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "frcnn_r50_fpn_v2_r640__ocsort_h0.3",
+   "config_hash": "c8ce00c19c1aa4dd",
+   "detector_variant_id": "frcnn_r50_fpn_v2_r640",
+   "cache_key": "cfa16ccf22100c6d",
+   "detector": {
+    "name": "frcnn_r50_fpn_v2",
+    "backend": "torchvision",
+    "checkpoint": {
+     "torchvision_weights": "FasterRCNN_ResNet50_FPN_V2_Weights.COCO_V1",
+     "file": "fasterrcnn_resnet50_fpn_v2_coco-dd69338a.pth"
+    }
+   },
+   "resolution": {
+    "requested": 640,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "ocsort_h0.3",
+    "family": "ocsort",
+    "profile": {
+     "iou_threshold": 0.3,
+     "delta_t": 3,
+     "inertia": 0.2,
+     "use_byte": false,
+     "Q_xy_scaling": 0.01,
+     "Q_s_scaling": 0.0001,
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.3,
+     "confirm_frames": 2
+    },
+    "profile_hash": "c36f06dd41fbbdc5",
+    "levels": {
+     "high_score_thresh": 0.3
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "frcnn_r50_fpn_v2_r640__botsort_h0.3",
+   "config_hash": "eedb94c4db2d81ce",
+   "detector_variant_id": "frcnn_r50_fpn_v2_r640",
+   "cache_key": "cfa16ccf22100c6d",
+   "detector": {
+    "name": "frcnn_r50_fpn_v2",
+    "backend": "torchvision",
+    "checkpoint": {
+     "torchvision_weights": "FasterRCNN_ResNet50_FPN_V2_Weights.COCO_V1",
+     "file": "fasterrcnn_resnet50_fpn_v2_coco-dd69338a.pth"
+    }
+   },
+   "resolution": {
+    "requested": 640,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "botsort_h0.3",
+    "family": "botsort",
+    "profile": {
+     "track_low_thresh": 0.1,
+     "match_thresh": 0.8,
+     "proximity_thresh": 0.5,
+     "appearance_thresh": 0.25,
+     "cmc_method": "ecc",
+     "with_reid": true,
+     "fuse_first_associate": false,
+     "reid_weights": "osnet_x0_25_msmt17",
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.3,
+     "confirm_frames": 2
+    },
+    "profile_hash": "2f87f1f3eb5fc827",
+    "levels": {
+     "high_score_thresh": 0.3
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "frcnn_r50_fpn_v2_r640__bytetrack_h0.45",
+   "config_hash": "77e82b5c9b7fe685",
+   "detector_variant_id": "frcnn_r50_fpn_v2_r640",
+   "cache_key": "cfa16ccf22100c6d",
+   "detector": {
+    "name": "frcnn_r50_fpn_v2",
+    "backend": "torchvision",
+    "checkpoint": {
+     "torchvision_weights": "FasterRCNN_ResNet50_FPN_V2_Weights.COCO_V1",
+     "file": "fasterrcnn_resnet50_fpn_v2_coco-dd69338a.pth"
+    }
+   },
+   "resolution": {
+    "requested": 640,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "bytetrack_h0.45",
+    "family": "bytetrack",
+    "profile": {
+     "match_thresh": 0.8,
+     "min_conf": 0.1,
+     "per_class": false,
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.45,
+     "confirm_frames": 2
+    },
+    "profile_hash": "27c7863fd6cf30ec",
+    "levels": {
+     "high_score_thresh": 0.45
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "frcnn_r50_fpn_v2_r640__ocsort_h0.45",
+   "config_hash": "251998d1e3eda2b2",
+   "detector_variant_id": "frcnn_r50_fpn_v2_r640",
+   "cache_key": "cfa16ccf22100c6d",
+   "detector": {
+    "name": "frcnn_r50_fpn_v2",
+    "backend": "torchvision",
+    "checkpoint": {
+     "torchvision_weights": "FasterRCNN_ResNet50_FPN_V2_Weights.COCO_V1",
+     "file": "fasterrcnn_resnet50_fpn_v2_coco-dd69338a.pth"
+    }
+   },
+   "resolution": {
+    "requested": 640,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "ocsort_h0.45",
+    "family": "ocsort",
+    "profile": {
+     "iou_threshold": 0.3,
+     "delta_t": 3,
+     "inertia": 0.2,
+     "use_byte": false,
+     "Q_xy_scaling": 0.01,
+     "Q_s_scaling": 0.0001,
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.45,
+     "confirm_frames": 2
+    },
+    "profile_hash": "5aaee0d8106f99c9",
+    "levels": {
+     "high_score_thresh": 0.45
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "frcnn_r50_fpn_v2_r640__botsort_h0.45",
+   "config_hash": "b7b2599e9c98d11c",
+   "detector_variant_id": "frcnn_r50_fpn_v2_r640",
+   "cache_key": "cfa16ccf22100c6d",
+   "detector": {
+    "name": "frcnn_r50_fpn_v2",
+    "backend": "torchvision",
+    "checkpoint": {
+     "torchvision_weights": "FasterRCNN_ResNet50_FPN_V2_Weights.COCO_V1",
+     "file": "fasterrcnn_resnet50_fpn_v2_coco-dd69338a.pth"
+    }
+   },
+   "resolution": {
+    "requested": 640,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "botsort_h0.45",
+    "family": "botsort",
+    "profile": {
+     "track_low_thresh": 0.1,
+     "match_thresh": 0.8,
+     "proximity_thresh": 0.5,
+     "appearance_thresh": 0.25,
+     "cmc_method": "ecc",
+     "with_reid": true,
+     "fuse_first_associate": false,
+     "reid_weights": "osnet_x0_25_msmt17",
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.45,
+     "confirm_frames": 2
+    },
+    "profile_hash": "1bd652174dcab5b2",
+    "levels": {
+     "high_score_thresh": 0.45
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "frcnn_r50_fpn_v2_r640__bytetrack_h0.6",
+   "config_hash": "c4b8e3ea309f1914",
+   "detector_variant_id": "frcnn_r50_fpn_v2_r640",
+   "cache_key": "cfa16ccf22100c6d",
+   "detector": {
+    "name": "frcnn_r50_fpn_v2",
+    "backend": "torchvision",
+    "checkpoint": {
+     "torchvision_weights": "FasterRCNN_ResNet50_FPN_V2_Weights.COCO_V1",
+     "file": "fasterrcnn_resnet50_fpn_v2_coco-dd69338a.pth"
+    }
+   },
+   "resolution": {
+    "requested": 640,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "bytetrack_h0.6",
+    "family": "bytetrack",
+    "profile": {
+     "match_thresh": 0.8,
+     "min_conf": 0.1,
+     "per_class": false,
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.6,
+     "confirm_frames": 2
+    },
+    "profile_hash": "db623fc22a37f59f",
+    "levels": {
+     "high_score_thresh": 0.6
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "frcnn_r50_fpn_v2_r640__ocsort_h0.6",
+   "config_hash": "32e1f4e65cec58ef",
+   "detector_variant_id": "frcnn_r50_fpn_v2_r640",
+   "cache_key": "cfa16ccf22100c6d",
+   "detector": {
+    "name": "frcnn_r50_fpn_v2",
+    "backend": "torchvision",
+    "checkpoint": {
+     "torchvision_weights": "FasterRCNN_ResNet50_FPN_V2_Weights.COCO_V1",
+     "file": "fasterrcnn_resnet50_fpn_v2_coco-dd69338a.pth"
+    }
+   },
+   "resolution": {
+    "requested": 640,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "ocsort_h0.6",
+    "family": "ocsort",
+    "profile": {
+     "iou_threshold": 0.3,
+     "delta_t": 3,
+     "inertia": 0.2,
+     "use_byte": false,
+     "Q_xy_scaling": 0.01,
+     "Q_s_scaling": 0.0001,
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.6,
+     "confirm_frames": 2
+    },
+    "profile_hash": "65c6a28cf7d5f9d4",
+    "levels": {
+     "high_score_thresh": 0.6
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "frcnn_r50_fpn_v2_r640__botsort_h0.6",
+   "config_hash": "10e550a680a31fe8",
+   "detector_variant_id": "frcnn_r50_fpn_v2_r640",
+   "cache_key": "cfa16ccf22100c6d",
+   "detector": {
+    "name": "frcnn_r50_fpn_v2",
+    "backend": "torchvision",
+    "checkpoint": {
+     "torchvision_weights": "FasterRCNN_ResNet50_FPN_V2_Weights.COCO_V1",
+     "file": "fasterrcnn_resnet50_fpn_v2_coco-dd69338a.pth"
+    }
+   },
+   "resolution": {
+    "requested": 640,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "botsort_h0.6",
+    "family": "botsort",
+    "profile": {
+     "track_low_thresh": 0.1,
+     "match_thresh": 0.8,
+     "proximity_thresh": 0.5,
+     "appearance_thresh": 0.25,
+     "cmc_method": "ecc",
+     "with_reid": true,
+     "fuse_first_associate": false,
+     "reid_weights": "osnet_x0_25_msmt17",
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.6,
+     "confirm_frames": 2
+    },
+    "profile_hash": "ebb16a662cf37488",
+    "levels": {
+     "high_score_thresh": 0.6
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "frcnn_r50_fpn_v2_r960__bytetrack_h0.3",
+   "config_hash": "03ed213d8e9888c9",
+   "detector_variant_id": "frcnn_r50_fpn_v2_r960",
+   "cache_key": "bc108d428f56aae0",
+   "detector": {
+    "name": "frcnn_r50_fpn_v2",
+    "backend": "torchvision",
+    "checkpoint": {
+     "torchvision_weights": "FasterRCNN_ResNet50_FPN_V2_Weights.COCO_V1",
+     "file": "fasterrcnn_resnet50_fpn_v2_coco-dd69338a.pth"
+    }
+   },
+   "resolution": {
+    "requested": 960,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "bytetrack_h0.3",
+    "family": "bytetrack",
+    "profile": {
+     "match_thresh": 0.8,
+     "min_conf": 0.1,
+     "per_class": false,
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.3,
+     "confirm_frames": 2
+    },
+    "profile_hash": "880591b231c62cde",
+    "levels": {
+     "high_score_thresh": 0.3
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "frcnn_r50_fpn_v2_r960__ocsort_h0.3",
+   "config_hash": "4e9741b17422495b",
+   "detector_variant_id": "frcnn_r50_fpn_v2_r960",
+   "cache_key": "bc108d428f56aae0",
+   "detector": {
+    "name": "frcnn_r50_fpn_v2",
+    "backend": "torchvision",
+    "checkpoint": {
+     "torchvision_weights": "FasterRCNN_ResNet50_FPN_V2_Weights.COCO_V1",
+     "file": "fasterrcnn_resnet50_fpn_v2_coco-dd69338a.pth"
+    }
+   },
+   "resolution": {
+    "requested": 960,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "ocsort_h0.3",
+    "family": "ocsort",
+    "profile": {
+     "iou_threshold": 0.3,
+     "delta_t": 3,
+     "inertia": 0.2,
+     "use_byte": false,
+     "Q_xy_scaling": 0.01,
+     "Q_s_scaling": 0.0001,
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.3,
+     "confirm_frames": 2
+    },
+    "profile_hash": "c36f06dd41fbbdc5",
+    "levels": {
+     "high_score_thresh": 0.3
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "frcnn_r50_fpn_v2_r960__botsort_h0.3",
+   "config_hash": "b7290761a94c115f",
+   "detector_variant_id": "frcnn_r50_fpn_v2_r960",
+   "cache_key": "bc108d428f56aae0",
+   "detector": {
+    "name": "frcnn_r50_fpn_v2",
+    "backend": "torchvision",
+    "checkpoint": {
+     "torchvision_weights": "FasterRCNN_ResNet50_FPN_V2_Weights.COCO_V1",
+     "file": "fasterrcnn_resnet50_fpn_v2_coco-dd69338a.pth"
+    }
+   },
+   "resolution": {
+    "requested": 960,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "botsort_h0.3",
+    "family": "botsort",
+    "profile": {
+     "track_low_thresh": 0.1,
+     "match_thresh": 0.8,
+     "proximity_thresh": 0.5,
+     "appearance_thresh": 0.25,
+     "cmc_method": "ecc",
+     "with_reid": true,
+     "fuse_first_associate": false,
+     "reid_weights": "osnet_x0_25_msmt17",
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.3,
+     "confirm_frames": 2
+    },
+    "profile_hash": "2f87f1f3eb5fc827",
+    "levels": {
+     "high_score_thresh": 0.3
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "frcnn_r50_fpn_v2_r960__bytetrack_h0.45",
+   "config_hash": "1a1bbf10743c67a7",
+   "detector_variant_id": "frcnn_r50_fpn_v2_r960",
+   "cache_key": "bc108d428f56aae0",
+   "detector": {
+    "name": "frcnn_r50_fpn_v2",
+    "backend": "torchvision",
+    "checkpoint": {
+     "torchvision_weights": "FasterRCNN_ResNet50_FPN_V2_Weights.COCO_V1",
+     "file": "fasterrcnn_resnet50_fpn_v2_coco-dd69338a.pth"
+    }
+   },
+   "resolution": {
+    "requested": 960,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "bytetrack_h0.45",
+    "family": "bytetrack",
+    "profile": {
+     "match_thresh": 0.8,
+     "min_conf": 0.1,
+     "per_class": false,
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.45,
+     "confirm_frames": 2
+    },
+    "profile_hash": "27c7863fd6cf30ec",
+    "levels": {
+     "high_score_thresh": 0.45
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "frcnn_r50_fpn_v2_r960__ocsort_h0.45",
+   "config_hash": "860109f9d2f89fb8",
+   "detector_variant_id": "frcnn_r50_fpn_v2_r960",
+   "cache_key": "bc108d428f56aae0",
+   "detector": {
+    "name": "frcnn_r50_fpn_v2",
+    "backend": "torchvision",
+    "checkpoint": {
+     "torchvision_weights": "FasterRCNN_ResNet50_FPN_V2_Weights.COCO_V1",
+     "file": "fasterrcnn_resnet50_fpn_v2_coco-dd69338a.pth"
+    }
+   },
+   "resolution": {
+    "requested": 960,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "ocsort_h0.45",
+    "family": "ocsort",
+    "profile": {
+     "iou_threshold": 0.3,
+     "delta_t": 3,
+     "inertia": 0.2,
+     "use_byte": false,
+     "Q_xy_scaling": 0.01,
+     "Q_s_scaling": 0.0001,
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.45,
+     "confirm_frames": 2
+    },
+    "profile_hash": "5aaee0d8106f99c9",
+    "levels": {
+     "high_score_thresh": 0.45
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "frcnn_r50_fpn_v2_r960__botsort_h0.45",
+   "config_hash": "09d582afcb543e1d",
+   "detector_variant_id": "frcnn_r50_fpn_v2_r960",
+   "cache_key": "bc108d428f56aae0",
+   "detector": {
+    "name": "frcnn_r50_fpn_v2",
+    "backend": "torchvision",
+    "checkpoint": {
+     "torchvision_weights": "FasterRCNN_ResNet50_FPN_V2_Weights.COCO_V1",
+     "file": "fasterrcnn_resnet50_fpn_v2_coco-dd69338a.pth"
+    }
+   },
+   "resolution": {
+    "requested": 960,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "botsort_h0.45",
+    "family": "botsort",
+    "profile": {
+     "track_low_thresh": 0.1,
+     "match_thresh": 0.8,
+     "proximity_thresh": 0.5,
+     "appearance_thresh": 0.25,
+     "cmc_method": "ecc",
+     "with_reid": true,
+     "fuse_first_associate": false,
+     "reid_weights": "osnet_x0_25_msmt17",
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.45,
+     "confirm_frames": 2
+    },
+    "profile_hash": "1bd652174dcab5b2",
+    "levels": {
+     "high_score_thresh": 0.45
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "frcnn_r50_fpn_v2_r960__bytetrack_h0.6",
+   "config_hash": "e3734a7bb0176e3f",
+   "detector_variant_id": "frcnn_r50_fpn_v2_r960",
+   "cache_key": "bc108d428f56aae0",
+   "detector": {
+    "name": "frcnn_r50_fpn_v2",
+    "backend": "torchvision",
+    "checkpoint": {
+     "torchvision_weights": "FasterRCNN_ResNet50_FPN_V2_Weights.COCO_V1",
+     "file": "fasterrcnn_resnet50_fpn_v2_coco-dd69338a.pth"
+    }
+   },
+   "resolution": {
+    "requested": 960,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "bytetrack_h0.6",
+    "family": "bytetrack",
+    "profile": {
+     "match_thresh": 0.8,
+     "min_conf": 0.1,
+     "per_class": false,
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.6,
+     "confirm_frames": 2
+    },
+    "profile_hash": "db623fc22a37f59f",
+    "levels": {
+     "high_score_thresh": 0.6
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "frcnn_r50_fpn_v2_r960__ocsort_h0.6",
+   "config_hash": "aeacb64f3c947ba3",
+   "detector_variant_id": "frcnn_r50_fpn_v2_r960",
+   "cache_key": "bc108d428f56aae0",
+   "detector": {
+    "name": "frcnn_r50_fpn_v2",
+    "backend": "torchvision",
+    "checkpoint": {
+     "torchvision_weights": "FasterRCNN_ResNet50_FPN_V2_Weights.COCO_V1",
+     "file": "fasterrcnn_resnet50_fpn_v2_coco-dd69338a.pth"
+    }
+   },
+   "resolution": {
+    "requested": 960,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "ocsort_h0.6",
+    "family": "ocsort",
+    "profile": {
+     "iou_threshold": 0.3,
+     "delta_t": 3,
+     "inertia": 0.2,
+     "use_byte": false,
+     "Q_xy_scaling": 0.01,
+     "Q_s_scaling": 0.0001,
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.6,
+     "confirm_frames": 2
+    },
+    "profile_hash": "65c6a28cf7d5f9d4",
+    "levels": {
+     "high_score_thresh": 0.6
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "frcnn_r50_fpn_v2_r960__botsort_h0.6",
+   "config_hash": "b77d6126215d76bd",
+   "detector_variant_id": "frcnn_r50_fpn_v2_r960",
+   "cache_key": "bc108d428f56aae0",
+   "detector": {
+    "name": "frcnn_r50_fpn_v2",
+    "backend": "torchvision",
+    "checkpoint": {
+     "torchvision_weights": "FasterRCNN_ResNet50_FPN_V2_Weights.COCO_V1",
+     "file": "fasterrcnn_resnet50_fpn_v2_coco-dd69338a.pth"
+    }
+   },
+   "resolution": {
+    "requested": 960,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "botsort_h0.6",
+    "family": "botsort",
+    "profile": {
+     "track_low_thresh": 0.1,
+     "match_thresh": 0.8,
+     "proximity_thresh": 0.5,
+     "appearance_thresh": 0.25,
+     "cmc_method": "ecc",
+     "with_reid": true,
+     "fuse_first_associate": false,
+     "reid_weights": "osnet_x0_25_msmt17",
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.6,
+     "confirm_frames": 2
+    },
+    "profile_hash": "ebb16a662cf37488",
+    "levels": {
+     "high_score_thresh": 0.6
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "frcnn_r50_fpn_v2_r1280__bytetrack_h0.3",
+   "config_hash": "3e9bf36fc688f35d",
+   "detector_variant_id": "frcnn_r50_fpn_v2_r1280",
+   "cache_key": "e3782e803cca43b6",
+   "detector": {
+    "name": "frcnn_r50_fpn_v2",
+    "backend": "torchvision",
+    "checkpoint": {
+     "torchvision_weights": "FasterRCNN_ResNet50_FPN_V2_Weights.COCO_V1",
+     "file": "fasterrcnn_resnet50_fpn_v2_coco-dd69338a.pth"
+    }
+   },
+   "resolution": {
+    "requested": 1280,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "bytetrack_h0.3",
+    "family": "bytetrack",
+    "profile": {
+     "match_thresh": 0.8,
+     "min_conf": 0.1,
+     "per_class": false,
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.3,
+     "confirm_frames": 2
+    },
+    "profile_hash": "880591b231c62cde",
+    "levels": {
+     "high_score_thresh": 0.3
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "frcnn_r50_fpn_v2_r1280__ocsort_h0.3",
+   "config_hash": "85887d8793bffb6f",
+   "detector_variant_id": "frcnn_r50_fpn_v2_r1280",
+   "cache_key": "e3782e803cca43b6",
+   "detector": {
+    "name": "frcnn_r50_fpn_v2",
+    "backend": "torchvision",
+    "checkpoint": {
+     "torchvision_weights": "FasterRCNN_ResNet50_FPN_V2_Weights.COCO_V1",
+     "file": "fasterrcnn_resnet50_fpn_v2_coco-dd69338a.pth"
+    }
+   },
+   "resolution": {
+    "requested": 1280,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "ocsort_h0.3",
+    "family": "ocsort",
+    "profile": {
+     "iou_threshold": 0.3,
+     "delta_t": 3,
+     "inertia": 0.2,
+     "use_byte": false,
+     "Q_xy_scaling": 0.01,
+     "Q_s_scaling": 0.0001,
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.3,
+     "confirm_frames": 2
+    },
+    "profile_hash": "c36f06dd41fbbdc5",
+    "levels": {
+     "high_score_thresh": 0.3
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "frcnn_r50_fpn_v2_r1280__botsort_h0.3",
+   "config_hash": "d762c0e87ccab91f",
+   "detector_variant_id": "frcnn_r50_fpn_v2_r1280",
+   "cache_key": "e3782e803cca43b6",
+   "detector": {
+    "name": "frcnn_r50_fpn_v2",
+    "backend": "torchvision",
+    "checkpoint": {
+     "torchvision_weights": "FasterRCNN_ResNet50_FPN_V2_Weights.COCO_V1",
+     "file": "fasterrcnn_resnet50_fpn_v2_coco-dd69338a.pth"
+    }
+   },
+   "resolution": {
+    "requested": 1280,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "botsort_h0.3",
+    "family": "botsort",
+    "profile": {
+     "track_low_thresh": 0.1,
+     "match_thresh": 0.8,
+     "proximity_thresh": 0.5,
+     "appearance_thresh": 0.25,
+     "cmc_method": "ecc",
+     "with_reid": true,
+     "fuse_first_associate": false,
+     "reid_weights": "osnet_x0_25_msmt17",
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.3,
+     "confirm_frames": 2
+    },
+    "profile_hash": "2f87f1f3eb5fc827",
+    "levels": {
+     "high_score_thresh": 0.3
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "frcnn_r50_fpn_v2_r1280__bytetrack_h0.45",
+   "config_hash": "b140218ddd672d1d",
+   "detector_variant_id": "frcnn_r50_fpn_v2_r1280",
+   "cache_key": "e3782e803cca43b6",
+   "detector": {
+    "name": "frcnn_r50_fpn_v2",
+    "backend": "torchvision",
+    "checkpoint": {
+     "torchvision_weights": "FasterRCNN_ResNet50_FPN_V2_Weights.COCO_V1",
+     "file": "fasterrcnn_resnet50_fpn_v2_coco-dd69338a.pth"
+    }
+   },
+   "resolution": {
+    "requested": 1280,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "bytetrack_h0.45",
+    "family": "bytetrack",
+    "profile": {
+     "match_thresh": 0.8,
+     "min_conf": 0.1,
+     "per_class": false,
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.45,
+     "confirm_frames": 2
+    },
+    "profile_hash": "27c7863fd6cf30ec",
+    "levels": {
+     "high_score_thresh": 0.45
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "frcnn_r50_fpn_v2_r1280__ocsort_h0.45",
+   "config_hash": "2f1724d2bd74098f",
+   "detector_variant_id": "frcnn_r50_fpn_v2_r1280",
+   "cache_key": "e3782e803cca43b6",
+   "detector": {
+    "name": "frcnn_r50_fpn_v2",
+    "backend": "torchvision",
+    "checkpoint": {
+     "torchvision_weights": "FasterRCNN_ResNet50_FPN_V2_Weights.COCO_V1",
+     "file": "fasterrcnn_resnet50_fpn_v2_coco-dd69338a.pth"
+    }
+   },
+   "resolution": {
+    "requested": 1280,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "ocsort_h0.45",
+    "family": "ocsort",
+    "profile": {
+     "iou_threshold": 0.3,
+     "delta_t": 3,
+     "inertia": 0.2,
+     "use_byte": false,
+     "Q_xy_scaling": 0.01,
+     "Q_s_scaling": 0.0001,
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.45,
+     "confirm_frames": 2
+    },
+    "profile_hash": "5aaee0d8106f99c9",
+    "levels": {
+     "high_score_thresh": 0.45
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "frcnn_r50_fpn_v2_r1280__botsort_h0.45",
+   "config_hash": "785cb27d1468e558",
+   "detector_variant_id": "frcnn_r50_fpn_v2_r1280",
+   "cache_key": "e3782e803cca43b6",
+   "detector": {
+    "name": "frcnn_r50_fpn_v2",
+    "backend": "torchvision",
+    "checkpoint": {
+     "torchvision_weights": "FasterRCNN_ResNet50_FPN_V2_Weights.COCO_V1",
+     "file": "fasterrcnn_resnet50_fpn_v2_coco-dd69338a.pth"
+    }
+   },
+   "resolution": {
+    "requested": 1280,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "botsort_h0.45",
+    "family": "botsort",
+    "profile": {
+     "track_low_thresh": 0.1,
+     "match_thresh": 0.8,
+     "proximity_thresh": 0.5,
+     "appearance_thresh": 0.25,
+     "cmc_method": "ecc",
+     "with_reid": true,
+     "fuse_first_associate": false,
+     "reid_weights": "osnet_x0_25_msmt17",
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.45,
+     "confirm_frames": 2
+    },
+    "profile_hash": "1bd652174dcab5b2",
+    "levels": {
+     "high_score_thresh": 0.45
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "frcnn_r50_fpn_v2_r1280__bytetrack_h0.6",
+   "config_hash": "fcdf01c38f6fddc4",
+   "detector_variant_id": "frcnn_r50_fpn_v2_r1280",
+   "cache_key": "e3782e803cca43b6",
+   "detector": {
+    "name": "frcnn_r50_fpn_v2",
+    "backend": "torchvision",
+    "checkpoint": {
+     "torchvision_weights": "FasterRCNN_ResNet50_FPN_V2_Weights.COCO_V1",
+     "file": "fasterrcnn_resnet50_fpn_v2_coco-dd69338a.pth"
+    }
+   },
+   "resolution": {
+    "requested": 1280,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "bytetrack_h0.6",
+    "family": "bytetrack",
+    "profile": {
+     "match_thresh": 0.8,
+     "min_conf": 0.1,
+     "per_class": false,
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.6,
+     "confirm_frames": 2
+    },
+    "profile_hash": "db623fc22a37f59f",
+    "levels": {
+     "high_score_thresh": 0.6
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "frcnn_r50_fpn_v2_r1280__ocsort_h0.6",
+   "config_hash": "5731c704317ab537",
+   "detector_variant_id": "frcnn_r50_fpn_v2_r1280",
+   "cache_key": "e3782e803cca43b6",
+   "detector": {
+    "name": "frcnn_r50_fpn_v2",
+    "backend": "torchvision",
+    "checkpoint": {
+     "torchvision_weights": "FasterRCNN_ResNet50_FPN_V2_Weights.COCO_V1",
+     "file": "fasterrcnn_resnet50_fpn_v2_coco-dd69338a.pth"
+    }
+   },
+   "resolution": {
+    "requested": 1280,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "ocsort_h0.6",
+    "family": "ocsort",
+    "profile": {
+     "iou_threshold": 0.3,
+     "delta_t": 3,
+     "inertia": 0.2,
+     "use_byte": false,
+     "Q_xy_scaling": 0.01,
+     "Q_s_scaling": 0.0001,
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.6,
+     "confirm_frames": 2
+    },
+    "profile_hash": "65c6a28cf7d5f9d4",
+    "levels": {
+     "high_score_thresh": 0.6
+    }
+   }
+  },
+  {
+   "schema_version": 1,
+   "config_id": "frcnn_r50_fpn_v2_r1280__botsort_h0.6",
+   "config_hash": "1686ab61060e8273",
+   "detector_variant_id": "frcnn_r50_fpn_v2_r1280",
+   "cache_key": "e3782e803cca43b6",
+   "detector": {
+    "name": "frcnn_r50_fpn_v2",
+    "backend": "torchvision",
+    "checkpoint": {
+     "torchvision_weights": "FasterRCNN_ResNet50_FPN_V2_Weights.COCO_V1",
+     "file": "fasterrcnn_resnet50_fpn_v2_coco-dd69338a.pth"
+    }
+   },
+   "resolution": {
+    "requested": 1280,
+    "semantics": "long_side"
+   },
+   "detection": {
+    "conf_floor": 0.01,
+    "max_det": 300,
+    "precision": "fp32"
+   },
+   "tracker": {
+    "name": "botsort_h0.6",
+    "family": "botsort",
+    "profile": {
+     "track_low_thresh": 0.1,
+     "match_thresh": 0.8,
+     "proximity_thresh": 0.5,
+     "appearance_thresh": 0.25,
+     "cmc_method": "ecc",
+     "with_reid": true,
+     "fuse_first_associate": false,
+     "reid_weights": "osnet_x0_25_msmt17",
+     "frame_rate": "from_sequence",
+     "lost_track_seconds": 1.0,
+     "high_score_thresh": 0.6,
+     "confirm_frames": 2
+    },
+    "profile_hash": "ebb16a662cf37488",
+    "levels": {
+     "high_score_thresh": 0.6
+    }
+   }
+  }
+ ],
+ "tracker_assets": {
+  "reid_weights": {
+   "file": "osnet_x0_25_msmt17.pt",
+   "sha256": "6f57607fed9f502b9efed546108132ee715df5a5b6e6932c6269bacb47f59f99",
+   "size": 3057863
+  }
+ },
+ "detector_limits": {
+  "dfine_l": {
+   "num_queries": 300
+  }
+ },
+ "corpus": {
+  "manifest_sha256": "c4ec2e40a15d638ad917c5522a3d3f4695d1d5985821e83fccddbee1193161c6",
+  "n_sequences": 100,
+  "n_eligible": 100,
+  "n_frames_eligible": 95859,
+  "eligible_by_dataset": {
+   "CrowdTrack-person": 33,
+   "MOT17": 7,
+   "MOT20": 4,
+   "PersonPath22": 47,
+   "SOMPT22": 9
+  }
+ },
+ "quality": {
+  "replicate_seeds": [
+   42
+  ],
+  "determinism_check": null,
+  "determinism_sequences": [],
+  "sequence_seed_pairs": 100
+ },
+ "cells": {
+  "detection": 1200,
+  "tracking": 10800,
+  "evaluation": 10800
+ }
+}

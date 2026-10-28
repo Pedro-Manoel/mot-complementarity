@@ -1,0 +1,29 @@
+# One profile per family with its own fields at the BoxMOT defaults; the common parameters are in catalog.yaml.
+# `frame_rate: from_sequence` uses the frameRate of seqinfo.ini.
+schema_version: 1
+boxmot_distribution: 17.0.0      # pip version
+boxmot_module_version: 16.0.11   # value of boxmot.__version__
+
+trackers:
+  bytetrack:
+    match_thresh: 0.8
+    min_conf: 0.1                # low threshold of the second association; below high_score_thresh
+    per_class: false
+    frame_rate: from_sequence
+  ocsort:
+    iou_threshold: 0.3           # BoxMOT derives asso_threshold from it
+    delta_t: 3
+    inertia: 0.2
+    use_byte: false
+    Q_xy_scaling: 0.01
+    Q_s_scaling: 0.0001
+  botsort:
+    track_low_thresh: 0.1        # low threshold of the second association; below high_score_thresh
+    match_thresh: 0.8
+    proximity_thresh: 0.5
+    appearance_thresh: 0.25
+    cmc_method: ecc
+    with_reid: true
+    fuse_first_associate: false
+    reid_weights: osnet_x0_25_msmt17
+    frame_rate: from_sequence

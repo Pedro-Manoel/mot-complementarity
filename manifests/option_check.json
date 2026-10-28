@@ -1,0 +1,1061 @@
+{
+ "schema_version": 1,
+ "seal_version": 1,
+ "created_utc": "2026-10-27T23:36:09Z",
+ "status": "ok",
+ "catalog_identity": "b4ece9af15046e24",
+ "versions": {
+  "detectors": {
+   "dfine": {
+    "torch": "2.8.0+cu129",
+    "transformers": "5.16.1",
+    "torchvision": "0.23.0+cu129",
+    "adapter_contract": "4"
+   },
+   "torchvision": {
+    "torch": "2.8.0+cu129",
+    "torchvision": "0.23.0+cu129",
+    "adapter_contract": "4"
+   },
+   "ultralytics": {
+    "torch": "2.8.0+cu129",
+    "ultralytics": "8.4.33",
+    "adapter_contract": "3"
+   }
+  },
+  "trackers": {
+   "boxmot": "17.0.0",
+   "torch": "2.8.0+cu129",
+   "boxmot_module": "16.0.11"
+  }
+ },
+ "device": "cpu",
+ "problems": [],
+ "probe_frames": [
+  {
+   "sequence": "MOT17/MOT17-05-FRCNN",
+   "frame": 1,
+   "width": 640,
+   "height": 480
+  },
+  {
+   "sequence": "MOT17/MOT17-05-FRCNN",
+   "frame": 419,
+   "width": 640,
+   "height": 480
+  },
+  {
+   "sequence": "PersonPath22/PersonPath22-00194",
+   "frame": 1,
+   "width": 720,
+   "height": 480
+  },
+  {
+   "sequence": "PersonPath22/PersonPath22-00194",
+   "frame": 155,
+   "width": 720,
+   "height": 480
+  },
+  {
+   "sequence": "MOT20/MOT20-03",
+   "frame": 1,
+   "width": 1173,
+   "height": 880
+  },
+  {
+   "sequence": "MOT20/MOT20-03",
+   "frame": 1203,
+   "width": 1173,
+   "height": 880
+  },
+  {
+   "sequence": "PersonPath22/PersonPath22-00121",
+   "frame": 1,
+   "width": 1280,
+   "height": 720
+  },
+  {
+   "sequence": "PersonPath22/PersonPath22-00121",
+   "frame": 87,
+   "width": 1280,
+   "height": 720
+  },
+  {
+   "sequence": "MOT20/MOT20-05",
+   "frame": 1,
+   "width": 1654,
+   "height": 1080
+  },
+  {
+   "sequence": "MOT20/MOT20-05",
+   "frame": 1658,
+   "width": 1654,
+   "height": 1080
+  },
+  {
+   "sequence": "PersonPath22/PersonPath22-00115",
+   "frame": 1,
+   "width": 1920,
+   "height": 1072
+  },
+  {
+   "sequence": "PersonPath22/PersonPath22-00115",
+   "frame": 1351,
+   "width": 1920,
+   "height": 1072
+  },
+  {
+   "sequence": "CrowdTrack-person/track0001",
+   "frame": 1,
+   "width": 1920,
+   "height": 1080
+  },
+  {
+   "sequence": "CrowdTrack-person/track0001",
+   "frame": 400,
+   "width": 1920,
+   "height": 1080
+  },
+  {
+   "sequence": "CrowdTrack-person/track0024",
+   "frame": 1,
+   "width": 2560,
+   "height": 1440
+  },
+  {
+   "sequence": "CrowdTrack-person/track0024",
+   "frame": 601,
+   "width": 2560,
+   "height": 1440
+  },
+  {
+   "sequence": "PersonPath22/PersonPath22-00156",
+   "frame": 1,
+   "width": 3840,
+   "height": 2160
+  },
+  {
+   "sequence": "PersonPath22/PersonPath22-00156",
+   "frame": 393,
+   "width": 3840,
+   "height": 2160
+  }
+ ],
+ "tracker_clip": {
+  "sequence": "MOT20/MOT20-01",
+  "frames": 100,
+  "detector_variant": "yolo26m_r1280"
+ },
+ "detectors": {
+  "dfine_l": {
+   "backend": "dfine",
+   "factory_settings": {
+    "num_queries": 300,
+    "feat_strides": [
+     8,
+     16,
+     32
+    ],
+    "processor_size": {
+     "height": 640,
+     "width": 640
+    },
+    "post_process_threshold": 0.5
+   },
+   "levels": {
+    "dfine_l_r640": {
+     "input_hw": [
+      [
+       640,
+       640
+      ]
+     ],
+     "saturated_frames": 18,
+     "detections": 1435,
+     "frames": 18
+    },
+    "dfine_l_r960": {
+     "input_hw": [
+      [
+       960,
+       960
+      ]
+     ],
+     "saturated_frames": 18,
+     "detections": 1435,
+     "frames": 18
+    },
+    "dfine_l_r1280": {
+     "input_hw": [
+      [
+       1280,
+       1280
+      ]
+     ],
+     "saturated_frames": 18,
+     "detections": 1492,
+     "frames": 18
+    }
+   },
+   "strong": {
+    "conf_floor": {
+     "value": 0.5,
+     "frames_changed": 18,
+     "frames": 18
+    },
+    "max_det": {
+     "note": "limit fixed by the queries of the checkpoint; checked that it cuts there"
+    }
+   }
+  },
+  "frcnn_r50_fpn_v2": {
+   "backend": "torchvision",
+   "factory_settings": {
+    "nms_thresh": 0.5,
+    "score_thresh": 0.05,
+    "detections_per_img": 100,
+    "min_size": [
+     800
+    ],
+    "max_size": 1333,
+    "size_divisible": 32,
+    "rpn_pre_nms_top_n_test": 1000,
+    "rpn_post_nms_top_n_test": 1000
+   },
+   "levels": {
+    "frcnn_r50_fpn_v2_r640": {
+     "input_hw": [
+      [
+       480,
+       640
+      ],
+      [
+       448,
+       640
+      ],
+      [
+       384,
+       640
+      ]
+     ],
+     "saturated_frames": 0,
+     "detections": 1155,
+     "frames": 18
+    },
+    "frcnn_r50_fpn_v2_r960": {
+     "input_hw": [
+      [
+       736,
+       960
+      ],
+      [
+       640,
+       960
+      ],
+      [
+       544,
+       960
+      ]
+     ],
+     "saturated_frames": 2,
+     "detections": 1246,
+     "frames": 18
+    },
+    "frcnn_r50_fpn_v2_r1280": {
+     "input_hw": [
+      [
+       960,
+       1280
+      ],
+      [
+       864,
+       1280
+      ],
+      [
+       736,
+       1280
+      ]
+     ],
+     "saturated_frames": 2,
+     "detections": 1289,
+     "frames": 18
+    }
+   },
+   "strong": {
+    "conf_floor": {
+     "value": 0.5,
+     "frames_changed": 17,
+     "frames": 18
+    },
+    "max_det": {
+     "value": 1,
+     "frames_changed": 17,
+     "frames": 18
+    }
+   }
+  },
+  "yolo26m": {
+   "backend": "ultralytics",
+   "factory_settings": {
+    "end2end": true,
+    "iou": 0.7,
+    "stride": 32,
+    "n_classes": 80
+   },
+   "levels": {
+    "yolo26m_r640": {
+     "input_hw": [
+      [
+       480,
+       640
+      ],
+      [
+       448,
+       640
+      ],
+      [
+       384,
+       640
+      ]
+     ],
+     "saturated_frames": 0,
+     "detections": 858,
+     "frames": 18
+    },
+    "yolo26m_r960": {
+     "input_hw": [
+      [
+       736,
+       960
+      ],
+      [
+       640,
+       960
+      ],
+      [
+       544,
+       960
+      ]
+     ],
+     "saturated_frames": 2,
+     "detections": 936,
+     "frames": 18
+    },
+    "yolo26m_r1280": {
+     "input_hw": [
+      [
+       960,
+       1280
+      ],
+      [
+       864,
+       1280
+      ],
+      [
+       736,
+       1280
+      ]
+     ],
+     "saturated_frames": 2,
+     "detections": 1047,
+     "frames": 18
+    }
+   },
+   "strong": {
+    "conf_floor": {
+     "value": 0.5,
+     "frames_changed": 17,
+     "frames": 18
+    },
+    "max_det": {
+     "value": 1,
+     "frames_changed": 18,
+     "frames": 18
+    }
+   }
+  },
+  "yolo26n": {
+   "backend": "ultralytics",
+   "factory_settings": {
+    "end2end": true,
+    "iou": 0.7,
+    "stride": 32,
+    "n_classes": 80
+   },
+   "levels": {
+    "yolo26n_r640": {
+     "input_hw": [
+      [
+       480,
+       640
+      ],
+      [
+       448,
+       640
+      ],
+      [
+       384,
+       640
+      ]
+     ],
+     "saturated_frames": 0,
+     "detections": 1178,
+     "frames": 18
+    },
+    "yolo26n_r960": {
+     "input_hw": [
+      [
+       736,
+       960
+      ],
+      [
+       640,
+       960
+      ],
+      [
+       544,
+       960
+      ]
+     ],
+     "saturated_frames": 2,
+     "detections": 1129,
+     "frames": 18
+    },
+    "yolo26n_r1280": {
+     "input_hw": [
+      [
+       960,
+       1280
+      ],
+      [
+       864,
+       1280
+      ],
+      [
+       736,
+       1280
+      ]
+     ],
+     "saturated_frames": 3,
+     "detections": 1329,
+     "frames": 18
+    }
+   },
+   "strong": {
+    "conf_floor": {
+     "value": 0.5,
+     "frames_changed": 18,
+     "frames": 18
+    },
+    "max_det": {
+     "value": 1,
+     "frames_changed": 18,
+     "frames": 18
+    }
+   }
+  }
+ },
+ "trackers": {
+  "botsort": {
+   "defaults": {
+    "track_low_thresh": 0.1,
+    "match_thresh": 0.8,
+    "proximity_thresh": 0.5,
+    "appearance_thresh": 0.25,
+    "cmc_method": "ecc",
+    "with_reid": true,
+    "fuse_first_associate": false
+   },
+   "common": {
+    "lost_track_seconds": 1.0,
+    "high_score_thresh": 0.3,
+    "confirm_frames": 2
+   },
+   "fields": {
+    "track_low_thresh": {
+     "tries": [
+      {
+       "value": 0.02,
+       "frames_changed": 97
+      }
+     ],
+     "frames_changed": 97,
+     "frames": 100
+    },
+    "match_thresh": {
+     "tries": [
+      {
+       "value": 0.3,
+       "frames_changed": 90
+      }
+     ],
+     "frames_changed": 90,
+     "frames": 100
+    },
+    "proximity_thresh": {
+     "tries": [
+      {
+       "value": 0.1,
+       "frames_changed": 97
+      }
+     ],
+     "frames_changed": 97,
+     "frames": 100
+    },
+    "appearance_thresh": {
+     "tries": [
+      {
+       "value": 0.05,
+       "frames_changed": 96
+      }
+     ],
+     "frames_changed": 96,
+     "frames": 100
+    },
+    "cmc_method": {
+     "tries": [
+      {
+       "value": "orb",
+       "frames_changed": 99
+      }
+     ],
+     "frames_changed": 99,
+     "frames": 100
+    },
+    "with_reid": {
+     "tries": [
+      {
+       "value": false,
+       "frames_changed": 97
+      }
+     ],
+     "frames_changed": 97,
+     "frames": 100
+    },
+    "fuse_first_associate": {
+     "tries": [
+      {
+       "value": true,
+       "frames_changed": 82
+      }
+     ],
+     "frames_changed": 82,
+     "frames": 100
+    },
+    "frame_rate": {
+     "tries": [
+      {
+       "value": "rate x 0.2",
+       "frames_changed": 66
+      }
+     ],
+     "frames_changed": 66,
+     "frames": 100
+    },
+    "lost_track_seconds": {
+     "tries": [
+      {
+       "value": 0.05,
+       "frames_changed": 66
+      }
+     ],
+     "frames_changed": 66,
+     "frames": 100
+    },
+    "high_score_thresh": {
+     "tries": [
+      {
+       "value": 0.2,
+       "frames_changed": 100
+      }
+     ],
+     "frames_changed": 100,
+     "frames": 100
+    }
+   },
+   "fixed": {
+    "confirm_frames": {
+     "value": 2,
+     "status": "fixed in the code of the family"
+    }
+   },
+   "no_effect": {
+    "det_thresh": {
+     "tries": [
+      {
+       "value": 0.1,
+       "frames_changed": 0
+      },
+      {
+       "value": 0.8,
+       "frames_changed": 0
+      }
+     ],
+     "frames_changed": 0,
+     "frames": 100
+    },
+    "max_age": {
+     "tries": [
+      {
+       "value": 1,
+       "frames_changed": 0
+      },
+      {
+       "value": 120,
+       "frames_changed": 0
+      }
+     ],
+     "frames_changed": 0,
+     "frames": 100
+    },
+    "min_hits": {
+     "tries": [
+      {
+       "value": 1,
+       "frames_changed": 0
+      },
+      {
+       "value": 10,
+       "frames_changed": 0
+      }
+     ],
+     "frames_changed": 0,
+     "frames": 100
+    }
+   },
+   "resolved": {
+    "track_low_thresh": 0.1,
+    "match_thresh": 0.8,
+    "proximity_thresh": 0.5,
+    "appearance_thresh": 0.25,
+    "with_reid": true,
+    "fuse_first_associate": false,
+    "track_high_thresh": 0.3,
+    "new_track_thresh": 0.3,
+    "max_time_lost": 24,
+    "cmc_class": "ECC",
+    "reid_half": false,
+    "lost_track_frames": 25,
+    "frame_rate_used": 25
+   },
+   "base_rows": 3093,
+   "levels": {
+    "fields": [
+     "high_score_thresh"
+    ],
+    "rows": {
+     "high_score_thresh=0.3": 3093,
+     "high_score_thresh=0.45": 2778,
+     "high_score_thresh=0.6": 2386
+    },
+    "pairs": [
+     {
+      "a": "high_score_thresh=0.3",
+      "b": "high_score_thresh=0.45",
+      "frames_changed": 100
+     },
+     {
+      "a": "high_score_thresh=0.3",
+      "b": "high_score_thresh=0.6",
+      "frames_changed": 100
+     },
+     {
+      "a": "high_score_thresh=0.45",
+      "b": "high_score_thresh=0.6",
+      "frames_changed": 100
+     }
+    ]
+   }
+  },
+  "bytetrack": {
+   "defaults": {
+    "match_thresh": 0.8,
+    "min_conf": 0.1,
+    "per_class": false
+   },
+   "common": {
+    "lost_track_seconds": 1.0,
+    "high_score_thresh": 0.3,
+    "confirm_frames": 2
+   },
+   "fields": {
+    "match_thresh": {
+     "tries": [
+      {
+       "value": 0.3,
+       "frames_changed": 99
+      }
+     ],
+     "frames_changed": 99,
+     "frames": 100
+    },
+    "min_conf": {
+     "tries": [
+      {
+       "value": 0.02,
+       "frames_changed": 93
+      }
+     ],
+     "frames_changed": 93,
+     "frames": 100
+    },
+    "per_class": {
+     "tries": [
+      {
+       "value": true,
+       "frames_changed": 91
+      }
+     ],
+     "frames_changed": 91,
+     "frames": 100
+    },
+    "frame_rate": {
+     "tries": [
+      {
+       "value": "rate x 0.2",
+       "frames_changed": 66
+      }
+     ],
+     "frames_changed": 66,
+     "frames": 100
+    },
+    "lost_track_seconds": {
+     "tries": [
+      {
+       "value": 0.05,
+       "frames_changed": 91
+      }
+     ],
+     "frames_changed": 91,
+     "frames": 100
+    },
+    "high_score_thresh": {
+     "tries": [
+      {
+       "value": 0.2,
+       "frames_changed": 100
+      }
+     ],
+     "frames_changed": 100,
+     "frames": 100
+    }
+   },
+   "fixed": {
+    "confirm_frames": {
+     "value": 2,
+     "status": "fixed in the code of the family"
+    }
+   },
+   "no_effect": {
+    "det_thresh": {
+     "tries": [
+      {
+       "value": 0.1,
+       "frames_changed": 0
+      },
+      {
+       "value": 0.8,
+       "frames_changed": 0
+      }
+     ],
+     "frames_changed": 0,
+     "frames": 100
+    },
+    "iou_threshold": {
+     "tries": [
+      {
+       "value": 0.05,
+       "frames_changed": 0
+      },
+      {
+       "value": 0.9,
+       "frames_changed": 0
+      }
+     ],
+     "frames_changed": 0,
+     "frames": 100
+    },
+    "max_age": {
+     "tries": [
+      {
+       "value": 1,
+       "frames_changed": 0
+      },
+      {
+       "value": 120,
+       "frames_changed": 0
+      }
+     ],
+     "frames_changed": 0,
+     "frames": 100
+    },
+    "max_obs": {
+     "tries": [
+      {
+       "value": 5,
+       "frames_changed": 0
+      },
+      {
+       "value": 500,
+       "frames_changed": 0
+      }
+     ],
+     "frames_changed": 0,
+     "frames": 100
+    },
+    "min_hits": {
+     "tries": [
+      {
+       "value": 1,
+       "frames_changed": 0
+      },
+      {
+       "value": 10,
+       "frames_changed": 0
+      }
+     ],
+     "frames_changed": 0,
+     "frames": 100
+    }
+   },
+   "resolved": {
+    "match_thresh": 0.8,
+    "min_conf": 0.1,
+    "per_class": false,
+    "track_thresh": 0.3,
+    "det_thresh": 0.3,
+    "max_time_lost": 24,
+    "lost_track_frames": 25,
+    "frame_rate_used": 25
+   },
+   "base_rows": 3002,
+   "levels": {
+    "fields": [
+     "high_score_thresh"
+    ],
+    "rows": {
+     "high_score_thresh=0.3": 3002,
+     "high_score_thresh=0.45": 2748,
+     "high_score_thresh=0.6": 2332
+    },
+    "pairs": [
+     {
+      "a": "high_score_thresh=0.3",
+      "b": "high_score_thresh=0.45",
+      "frames_changed": 100
+     },
+     {
+      "a": "high_score_thresh=0.3",
+      "b": "high_score_thresh=0.6",
+      "frames_changed": 100
+     },
+     {
+      "a": "high_score_thresh=0.45",
+      "b": "high_score_thresh=0.6",
+      "frames_changed": 100
+     }
+    ]
+   }
+  },
+  "ocsort": {
+   "defaults": {
+    "iou_threshold": 0.3,
+    "delta_t": 3,
+    "inertia": 0.2,
+    "use_byte": false,
+    "Q_xy_scaling": 0.01,
+    "Q_s_scaling": 0.0001
+   },
+   "common": {
+    "lost_track_seconds": 1.0,
+    "high_score_thresh": 0.3,
+    "confirm_frames": 2
+   },
+   "fields": {
+    "iou_threshold": {
+     "tries": [
+      {
+       "value": 0.05,
+       "frames_changed": 94
+      }
+     ],
+     "frames_changed": 94,
+     "frames": 100
+    },
+    "delta_t": {
+     "tries": [
+      {
+       "value": 1,
+       "frames_changed": 94
+      }
+     ],
+     "frames_changed": 94,
+     "frames": 100
+    },
+    "inertia": {
+     "tries": [
+      {
+       "value": 0.0,
+       "frames_changed": 88
+      }
+     ],
+     "frames_changed": 88,
+     "frames": 100
+    },
+    "use_byte": {
+     "tries": [
+      {
+       "value": true,
+       "frames_changed": 98
+      }
+     ],
+     "frames_changed": 98,
+     "frames": 100
+    },
+    "Q_xy_scaling": {
+     "tries": [
+      {
+       "value": 0.0001,
+       "frames_changed": 61
+      }
+     ],
+     "frames_changed": 61,
+     "frames": 100
+    },
+    "Q_s_scaling": {
+     "tries": [
+      {
+       "value": 1e-06,
+       "frames_changed": 0
+      },
+      {
+       "value": 1.0,
+       "frames_changed": 63
+      }
+     ],
+     "frames_changed": 63,
+     "frames": 100
+    },
+    "lost_track_seconds": {
+     "tries": [
+      {
+       "value": 0.05,
+       "frames_changed": 96
+      }
+     ],
+     "frames_changed": 96,
+     "frames": 100
+    },
+    "high_score_thresh": {
+     "tries": [
+      {
+       "value": 0.2,
+       "frames_changed": 100
+      }
+     ],
+     "frames_changed": 100,
+     "frames": 100
+    },
+    "confirm_frames": {
+     "tries": [
+      {
+       "value": 1,
+       "frames_changed": 99
+      }
+     ],
+     "frames_changed": 99,
+     "frames": 100
+    }
+   },
+   "fixed": {},
+   "no_effect": {
+    "asso_threshold": {
+     "status": "not a constructor parameter; BoxMOT derives it or does not receive it"
+    },
+    "frame_rate": {
+     "status": "not a constructor parameter; BoxMOT derives it or does not receive it"
+    },
+    "max_obs": {
+     "tries": [
+      {
+       "value": 5,
+       "frames_changed": 0
+      },
+      {
+       "value": 500,
+       "frames_changed": 0
+      }
+     ],
+     "frames_changed": 0,
+     "frames": 100
+    },
+    "min_conf": {
+     "tries": [
+      {
+       "value": 0.02,
+       "frames_changed": 0
+      },
+      {
+       "value": 0.4,
+       "frames_changed": 0
+      }
+     ],
+     "frames_changed": 0,
+     "frames": 100
+    },
+    "per_class": {
+     "tries": [
+      {
+       "value": true,
+       "frames_changed": 0
+      }
+     ],
+     "frames_changed": 0,
+     "frames": 100
+    }
+   },
+   "resolved": {
+    "iou_threshold": 0.3,
+    "delta_t": 3,
+    "inertia": 0.2,
+    "use_byte": false,
+    "Q_xy_scaling": 0.01,
+    "Q_s_scaling": 0.0001,
+    "det_thresh": 0.3,
+    "max_age": 25,
+    "min_hits": 1,
+    "asso_threshold": 0.3,
+    "lost_track_frames": 25,
+    "frame_rate_used": null
+   },
+   "base_rows": 2909,
+   "levels": {
+    "fields": [
+     "high_score_thresh"
+    ],
+    "rows": {
+     "high_score_thresh=0.3": 2909,
+     "high_score_thresh=0.45": 2406,
+     "high_score_thresh=0.6": 1980
+    },
+    "pairs": [
+     {
+      "a": "high_score_thresh=0.3",
+      "b": "high_score_thresh=0.45",
+      "frames_changed": 100
+     },
+     {
+      "a": "high_score_thresh=0.3",
+      "b": "high_score_thresh=0.6",
+      "frames_changed": 100
+     },
+     {
+      "a": "high_score_thresh=0.45",
+      "b": "high_score_thresh=0.6",
+      "frames_changed": 100
+     }
+    ]
+   }
+  }
+ }
+}

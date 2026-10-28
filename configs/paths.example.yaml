@@ -1,0 +1,28 @@
+# Local paths: copy to paths.local.yaml (ignored by git) and adjust. physical_groups, camera_motion and selection are
+# relative to this folder, runs_root to the repository root, and the other paths to the folder the commands run from.
+
+# Datasets in MOTChallenge format (see the README).
+data_root: <path to the datasets>
+datasets:
+  MOT17: {dir: MOT17/train, split: train}
+  MOT20: {dir: MOT20/train, split: train}
+  SOMPT22: {dir: SOMPT22/train, split: train}
+  CrowdTrack-person: {dir: CrowdTrack-person, split: all}
+  PersonPath22: {dir: PersonPath22/seqs, split: all}
+
+# Holds yolo26n.pt, yolo26m.pt and osnet_x0_25_msmt17.pt.
+weights_dir: <path to the weights>
+# Caches with D-FINE (Hugging Face) and Faster R-CNN (torchvision); nothing is downloaded.
+hf_cache_dir: <home>/.cache/huggingface/hub
+torch_hub_dir: <home>/.cache/torch/hub
+
+# TrackEval runs unchanged in a separate Python environment.
+trackeval:
+  python: <path to the TrackEval environment>/Scripts/python.exe
+  repo: <path to the TrackEval clone>
+
+runs_root: runs
+physical_groups: ../manifests/physical_groups.csv
+camera_motion: ../manifests/camera_motion.csv
+selection:                                    # only the selected PersonPath22 videos are eligible
+  PersonPath22: ../manifests/personpath22_selection.csv
